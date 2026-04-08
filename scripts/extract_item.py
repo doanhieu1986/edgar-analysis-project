@@ -20,6 +20,7 @@ import argparse
 from pathlib import Path
 from typing import Optional, Dict, Any
 import pandas as pd
+from tqdm import tqdm
 
 
 def build_item_pattern(item_id: str) -> re.Pattern:
@@ -140,8 +141,8 @@ def process_files_to_parquet(file_or_dir: Path) -> None:
     # Collect data by year
     data_by_year: Dict[str, list] = {}
 
-    for file_path in files:
-        print(f"Processing: {file_path.name}")
+    # Process files with progress bar
+    for file_path in tqdm(files, desc="Processing files"):
         try:
             text = file_path.read_text(encoding="utf-8", errors="replace")
 
