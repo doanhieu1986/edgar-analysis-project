@@ -192,11 +192,16 @@ def main():
     parser = argparse.ArgumentParser(
         description="Extract Items from SEC 10-K filing text files."
     )
+
+    # Calculate default path relative to script location
+    script_dir = Path(__file__).parent
+    default_source_dir = script_dir.parent / ".sources_data"
+
     parser.add_argument(
         "file",
         nargs="?",
-        default="../.sources_data",
-        help="Path to the 10-K text file or directory (default: ../.sources_data)",
+        default=str(default_source_dir),
+        help=f"Path to the 10-K text file or directory (default: {default_source_dir})",
     )
     parser.add_argument(
         "item",

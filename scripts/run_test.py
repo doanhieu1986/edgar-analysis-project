@@ -1,31 +1,28 @@
 """
-View parquet file as DataFrame
+View parquet file as DataFrame using Polars
 """
 
-import pandas as pd
+import polars as pl
 from pathlib import Path
 
+# Get the outputs directory relative to script location
+script_dir = Path(__file__).parent
+outputs_dir = script_dir.parent / "outputs"
 
-def view_parquet(file_path: str) -> None:
-    """Read and display parquet file as DataFrame"""
-    path = Path(file_path)
+# Find all parquet files
+parquet_files = sorted(outputs_dir.glob("*_data.parquet"), reverse=True)
 
-    if not path.exists():
-        print(f"Error: File not found: {file_path}")
-        return
+if not parquet_files:
+    print(f"No parquet files found in {outputs_dir}")
+    exit(1)
 
-    # Read parquet file
-    df = pd.read_parquet(file_path)
+# Read the latest parquet file
+file_path = parquet_files[0]
+print(f"Reading: {file_path.name}\n")
 
-    # Set pandas display options for better readability
-    pd.set_option('display.max_columns', None)
-    pd.set_option('display.max_rows', None)
-    pd.set_option('display.width', None)
-    pd.set_option('display.max_colwidth', 80)
+# Read file using Polars
+df = pl.read_parquet(file_path)
 
-    # Display DataFrame
-    print(df)
-
-
-if __name__ == "__main__":
-    view_parquet("outputs/2024_data.parquet")
+# Display data
+print(df)
+print(f"\nShape: {df.shape[0]} rows × {df.shape[1]} columns")
