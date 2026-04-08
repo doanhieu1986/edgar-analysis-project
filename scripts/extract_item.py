@@ -1,20 +1,25 @@
 """
 Extract specific Items from SEC 10-K filing text files.
+Support extracting metadata and saving to Parquet format.
 
 Usage:
     python extract_item.py <file_path> <item_name> [--output <output_file>]
+    python extract_item.py <file_or_dir> --parquet
 
 Examples:
     python extract_item.py report.txt "1A"
     python extract_item.py report.txt "7"
     python extract_item.py report.txt "9A" --output item_9a.txt
     python extract_item.py report.txt --list
+    python extract_item.py /path/to/10k/files --parquet
 """
 
 import re
 import sys
 import argparse
 from pathlib import Path
+from typing import Optional, Dict, Any
+import pandas as pd
 
 
 def build_item_pattern(item_id: str) -> re.Pattern:
@@ -41,6 +46,38 @@ def list_items(text: str) -> list[tuple[str, int, str]]:
         header = m.group(1).strip()
         results.append((item_id, line_no, header))
     return results
+
+
+def extract_metadata(text: str) -> Dict[str, Any]:
+    """
+    Extract metadata from SEC 10-K header section.
+    Returns dict with: cik, filed_date, form_type, conformed_period
+    """
+    metadata = {}
+
+    # Extract CENTRAL INDEX KEY
+    cik_match = re.search(r"CENTRAL INDEX KEY:\s*(\d+)", text, re.IGNORECASE)
+    metadata["cik"] = cik_match.group(1) if cik_match else None
+
+    # Extract FILED AS OF DATE (YYYYMMDD)
+    filed_match = re.search(r"FILED AS OF DATE:\s*(\d{8})", text, re.IGNORECASE)
+    metadata["filed_date"] = filed_match.group(1) if filed_match else None
+
+    # Extract CONFORMED SUBMISSION TYPE
+    form_match = re.search(r"CONFORMED SUBMISSION TYPE:\s*(\S+)", text, re.IGNORECASE)
+    metadata["form_type"] = form_match.group(1) if form_match else None
+
+    # Extract CONFORMED PERIOD OF REPORT (to get the year)
+    period_match = re.search(r"CONFORMED PERIOD OF REPORT:\s*(\d{8})", text, re.IGNORECASE)
+    if period_match:
+        period_str = period_match.group(1)
+        metadata["year"] = period_str[:4]  # Extract year from YYYYMMDD
+        metadata["conformed_period"] = period_str
+    else:
+        metadata["year"] = None
+        metadata["conformed_period"] = None
+
+    return metadata
 
 
 def extract_item(text: str, item_id: str) -> str | None:
@@ -76,11 +113,83 @@ def extract_item(text: str, item_id: str) -> str | None:
     return text[start_match.start() : end_pos].strip()
 
 
+def process_files_to_parquet(file_or_dir: Path) -> None:
+    """
+    Process 10-K files and extract metadata + items, save to parquet by year.
+    """
+    # Get list of files
+    if file_or_dir.is_file():
+        files = [file_or_dir]
+    elif file_or_dir.is_dir():
+        files = list(file_or_dir.glob("*_10-K_*.txt"))
+    else:
+        print(f"Error: {file_or_dir} not found", file=sys.stderr)
+        sys.exit(1)
+
+    if not files:
+        print(f"No 10-K files found in {file_or_dir}", file=sys.stderr)
+        sys.exit(1)
+
+    # Create outputs directory
+    output_dir = Path("outputs")
+    output_dir.mkdir(exist_ok=True)
+
+    # Collect data by year
+    data_by_year: Dict[str, list] = {}
+
+    for file_path in files:
+        print(f"Processing: {file_path.name}")
+        try:
+            text = file_path.read_text(encoding="utf-8", errors="replace")
+
+            # Extract metadata
+            metadata = extract_metadata(text)
+            filed_date = metadata.get("filed_date")
+
+            if not filed_date:
+                print(f"  Warning: Could not extract filed_date from {file_path.name}", file=sys.stderr)
+                continue
+
+            # Extract year from filed_date (YYYYMMDD -> YYYY)
+            year = filed_date[:4]
+
+            # Extract items
+            item_1a = extract_item(text, "1A")
+            item_7 = extract_item(text, "7")
+
+            # Create data row with year at the beginning
+            row = {
+                "year": year,
+                "filename": file_path.name,
+                "cik": metadata.get("cik"),
+                "filed_date": metadata.get("filed_date"),
+                "form_type": metadata.get("form_type"),
+                "conformed_period": metadata.get("conformed_period"),
+                "item_1a": item_1a,
+                "item_7": item_7,
+            }
+
+            # Add to year bucket
+            if year not in data_by_year:
+                data_by_year[year] = []
+            data_by_year[year].append(row)
+
+        except Exception as e:
+            print(f"  Error processing {file_path.name}: {e}", file=sys.stderr)
+
+    # Save parquet files by year
+    for year, records in sorted(data_by_year.items()):
+        df = pd.DataFrame(records)
+        output_file = output_dir / f"{year}_data.parquet"
+        df.to_parquet(output_file, index=False)
+        print(f"Saved: {output_file} ({len(records)} records)")
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Extract Items from SEC 10-K filing text files."
     )
-    parser.add_argument("file", help="Path to the 10-K text file")
+    parser.add_argument("file", help="Path to the 10-K text file or directory")
     parser.add_argument(
         "item",
         nargs="?",
@@ -92,6 +201,11 @@ def main():
         help="List all Items found in the file",
     )
     parser.add_argument(
+        "--parquet",
+        action="store_true",
+        help="Extract metadata and items, save to parquet files by year",
+    )
+    parser.add_argument(
         "--output",
         "-o",
         help="Save extracted text to this file instead of printing",
@@ -99,6 +213,12 @@ def main():
     args = parser.parse_args()
 
     file_path = Path(args.file)
+
+    # Handle parquet mode
+    if args.parquet:
+        process_files_to_parquet(file_path)
+        return
+
     if not file_path.exists():
         print(f"Error: file not found: {file_path}", file=sys.stderr)
         sys.exit(1)

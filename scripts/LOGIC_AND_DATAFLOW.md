@@ -13,7 +13,9 @@ Script `extract_item.py` giúp chiết xuất nội dung của các mục (Item)
 |-----|---------|---------|---------|
 | `build_item_pattern()` | `item_id: str` | `re.Pattern` | Tạo regex pattern để tìm kiếm Item header |
 | `list_items()` | `text: str` | `list[tuple]` | Liệt kê tất cả Items trong file |
+| `extract_metadata()` | `text: str` | `Dict[str, Any]` | Chiết xuất metadata từ SEC header |
 | `extract_item()` | `text: str, item_id: str` | `str \| None` | Trích xuất nội dung của một Item |
+| `process_files_to_parquet()` | `file_or_dir: Path` | None | Xử lý batch files, xuất Parquet theo năm |
 | `main()` | CLI args | None | Xử lý lệnh dòng lệnh và điều phối logic |
 
 ---
@@ -52,6 +54,34 @@ def list_items(text: str) -> list[tuple[str, int, str]]:
 
 ---
 
+#### **extract_metadata(text)**
+```python
+def extract_metadata(text: str) -> Dict[str, Any]:
+```
+- **Input**: Toàn bộ nội dung file 10-K
+- **Xử lý**:
+  1. Sử dụng regex để tìm các trường metadata từ SEC header:
+     - `CENTRAL INDEX KEY:\s*(\d+)` → `cik`
+     - `FILED AS OF DATE:\s*(\d{8})` → `filed_date` (YYYYMMDD)
+     - `CONFORMED SUBMISSION TYPE:\s*(\S+)` → `form_type` (e.g., "10-K")
+     - `CONFORMED PERIOD OF REPORT:\s*(\d{8})` → `conformed_period` (YYYYMMDD)
+  2. Extract year từ `conformed_period` hoặc `filed_date` (4 ký tự đầu)
+  3. Compile thành dictionary
+- **Output**: Dict với keys: `cik`, `filed_date`, `form_type`, `conformed_period`, `year`
+
+**Ví dụ output**:
+```python
+{
+    "cik": "0000090168",
+    "filed_date": "20240102",
+    "form_type": "10-K",
+    "conformed_period": "20230930",
+    "year": "2024"
+}
+```
+
+---
+
 #### **extract_item(text, item_id)**
 ```python
 def extract_item(text: str, item_id: str) -> str | None:
@@ -74,6 +104,42 @@ def extract_item(text: str, item_id: str) -> str | None:
   6. Return: nội dung Item (hoặc `None` nếu không tìm thấy)
 
 - **Output**: String chứa nội dung Item hoặc `None`
+
+---
+
+#### **process_files_to_parquet(file_or_dir)**
+```python
+def process_files_to_parquet(file_or_dir: Path) -> None:
+```
+- **Input**: Đường dẫn file hoặc thư mục
+- **Xử lý**:
+  1. **Xác định input**:
+     - Nếu file: xử lý file đó
+     - Nếu thư mục: glob tất cả `*_10-K_*.txt` files
+  2. **Tạo thư mục output**: `outputs/` (nếu chưa tồn tại)
+  3. **Loop qua mỗi file**:
+     - Đọc nội dung file
+     - Gọi `extract_metadata()` → lấy `filed_date` và tính `year`
+     - Gọi `extract_item()` → chiết xuất Item 1A
+     - Gọi `extract_item()` → chiết xuất Item 7
+     - Tạo dict row với các dữ liệu trên
+     - Thêm row vào bucket `data_by_year[year]`
+  4. **Lưu Parquet files**:
+     - Loop qua mỗi year bucket
+     - Tạo DataFrame từ records
+     - Lưu vào `outputs/{year}_data.parquet`
+- **Output**: File parquet trong thư mục `outputs/`
+
+**Ví dụ process**:
+```
+Input files:
+- 20240102_10-K_edgar_data_90168_0000090168-23-000083.txt (filed_date: 20240102 → year: 2024)
+- 20230630_10-K_edgar_data_12345_0000012345-23-000099.txt (filed_date: 20230630 → year: 2023)
+
+Output:
+- outputs/2024_data.parquet (1 record)
+- outputs/2023_data.parquet (1 record)
+```
 
 ---
 
@@ -196,7 +262,7 @@ Item 1A. Risk Factors
 Set forth below are material risks...
 ```
 
-### **Scenario 3: Chiết xuất & Lưu file**
+### **Scenario 3: Chiết xuất & Lưu file text**
 
 ```
 Input: extract_item.py file.txt "7" --output item_7.txt
@@ -212,6 +278,41 @@ Input: extract_item.py file.txt "7" --output item_7.txt
 Output: 
 - File: item_7.txt (7,148 words)
 - Console: Status message
+```
+
+### **Scenario 4: Batch processing với Parquet output**
+
+```
+Input: extract_item.py /path/to/10k/files --parquet
+       ↓
+1. Glob files: *.py matches ["20240102_10-K_edgar_data_90168_*.txt", "20230630_10-K_edgar_data_12345_*.txt"]
+2. Create outputs/ directory
+3. For each file:
+   a. Read file → text (string)
+   b. extract_metadata(text) → {cik, filed_date, form_type, ...}
+   c. Extract year from filed_date: "20240102"[:4] = "2024"
+   d. extract_item(text, "1A") → item_1a content
+   e. extract_item(text, "7") → item_7 content
+   f. Build row:
+      {
+        "year": "2024",
+        "filename": "20240102_10-K_edgar_data_90168_*.txt",
+        "cik": "0000090168",
+        "filed_date": "20240102",
+        "form_type": "10-K",
+        "conformed_period": "20230930",
+        "item_1a": "Item 1A. Risk Factors ...",
+        "item_7": "Item 7. MD&A ..."
+      }
+   g. Add to data_by_year["2024"]
+4. Save parquet:
+   - data_by_year["2024"] → DataFrame → outputs/2024_data.parquet
+   - data_by_year["2023"] → DataFrame → outputs/2023_data.parquet
+       ↓
+Output: 
+- outputs/2024_data.parquet (1 record)
+- outputs/2023_data.parquet (1 record)
+- Console: "Saved: outputs/2024_data.parquet (1 records)"
 ```
 
 ---
@@ -256,6 +357,7 @@ Output:
 
 ## 🚀 Cách sử dụng
 
+### Chế độ chiết xuất đơn lẻ
 ```bash
 # Liệt kê Items
 python scripts/extract_item.py <file.txt> --list
@@ -269,6 +371,49 @@ python scripts/extract_item.py <file.txt> "7" --output item_7.txt
 # Chiết xuất Item 9A & lưu
 python scripts/extract_item.py <file.txt> "9A" -o item_9a.txt
 ```
+
+### Chế độ Parquet (Batch)
+```bash
+# Xử lý file đơn lẻ
+python scripts/extract_item.py file.txt --parquet
+
+# Xử lý tất cả 10-K files trong thư mục
+python scripts/extract_item.py /path/to/10k/files --parquet
+
+# Kết quả: outputs/2024_data.parquet, outputs/2023_data.parquet, ...
+```
+
+### Xem kết quả Parquet
+```bash
+# Xem dữ liệu dưới dạng DataFrame
+python scripts/run_test.py
+```
+
+---
+
+## 📊 Parquet Output Format
+
+### Cấu trúc DataFrame
+
+| Cột | Kiểu | Ví dụ | Mô tả |
+|-----|------|--------|-------|
+| `year` | str | "2024" | Năm từ filed_date |
+| `filename` | str | "20240102_10-K_edgar_data_90168_*.txt" | Tên file gốc |
+| `cik` | str | "0000090168" | CENTRAL INDEX KEY |
+| `filed_date` | str | "20240102" | FILED AS OF DATE (YYYYMMDD) |
+| `form_type` | str | "10-K" | CONFORMED SUBMISSION TYPE |
+| `conformed_period` | str | "20230930" | CONFORMED PERIOD OF REPORT (YYYYMMDD) |
+| `item_1a` | str | "Item 1A. Risk Factors..." | Nội dung Item 1A (full text) |
+| `item_7` | str | "Item 7. MD&A..." | Nội dung Item 7 (full text) |
+
+### Tên file output
+- **Format**: `{year}_data.parquet`
+- **Ví dụ**: `2024_data.parquet`, `2023_data.parquet`
+- **Vị trí**: Thư mục `outputs/`
+
+### Tổng hợp theo năm
+- Nếu có nhiều file cùng năm, dữ liệu được gộp vào cùng một parquet file
+- Ví dụ: 2 files với filed_date "20240102" và "20240630" → cùng `2024_data.parquet` với 2 rows
 
 ---
 
