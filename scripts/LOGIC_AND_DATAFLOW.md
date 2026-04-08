@@ -357,6 +357,14 @@ Output:
 
 ## 🚀 Cách sử dụng
 
+### Default Mode (Chạy mà không có argument)
+```bash
+# Chạy từ folder scripts → tự động extract từ ../.sources_data
+python extract_item.py
+
+# Kết quả: outputs/2024_data.parquet, outputs/2023_data.parquet, ...
+```
+
 ### Chế độ chiết xuất đơn lẻ
 ```bash
 # Liệt kê Items

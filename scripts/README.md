@@ -25,6 +25,9 @@ python extract_item.py <10-K file> "7" --output item_7.txt
 
 ### Chế độ Parquet (Batch processing)
 ```bash
+# Chạy mà không có argument → tự động xử lý tất cả file từ ../.sources_data
+python extract_item.py
+
 # Xử lý một file duy nhất
 python extract_item.py file.txt --parquet
 

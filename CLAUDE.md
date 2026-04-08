@@ -30,6 +30,13 @@ edgar-analysis-project/
 
 ## 🎯 Core Functionality
 
+### Default Mode (Run without arguments)
+- Automatically process all files from `../.sources_data` folder
+- Extract metadata: CIK, filed_date, form_type, conformed_period
+- Extract Items 1A and 7 content
+- Save to Parquet format, organized by year (from filed_date)
+- Command: `python scripts/extract_item.py`
+
 ### Extract Item Mode
 - Extract specific Items (1A, 7, 9A, etc.) from 10-K text files
 - List all Items in a file

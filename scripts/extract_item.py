@@ -189,7 +189,12 @@ def main():
     parser = argparse.ArgumentParser(
         description="Extract Items from SEC 10-K filing text files."
     )
-    parser.add_argument("file", help="Path to the 10-K text file or directory")
+    parser.add_argument(
+        "file",
+        nargs="?",
+        default="../.sources_data",
+        help="Path to the 10-K text file or directory (default: ../.sources_data)",
+    )
     parser.add_argument(
         "item",
         nargs="?",
@@ -213,6 +218,10 @@ def main():
     args = parser.parse_args()
 
     file_path = Path(args.file)
+
+    # If no parquet flag and no item specified, default to parquet mode
+    if not args.parquet and not args.item and not args.list:
+        args.parquet = True
 
     # Handle parquet mode
     if args.parquet:
