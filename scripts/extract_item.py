@@ -121,7 +121,8 @@ def process_files_to_parquet(file_or_dir: Path) -> None:
     if file_or_dir.is_file():
         files = [file_or_dir]
     elif file_or_dir.is_dir():
-        files = list(file_or_dir.glob("*_10-K_*.txt"))
+        # Recursively find all 10-K files in directory and subdirectories
+        files = list(file_or_dir.rglob("*_10-K_*.txt"))
     else:
         print(f"Error: {file_or_dir} not found", file=sys.stderr)
         sys.exit(1)
@@ -129,6 +130,8 @@ def process_files_to_parquet(file_or_dir: Path) -> None:
     if not files:
         print(f"No 10-K files found in {file_or_dir}", file=sys.stderr)
         sys.exit(1)
+
+    print(f"Found {len(files)} 10-K files to process")
 
     # Create outputs directory
     output_dir = Path("outputs")
