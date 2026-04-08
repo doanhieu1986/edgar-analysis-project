@@ -1,659 +1,330 @@
-UNITED STATES SECURITIES AND EXCHANGE COMMISSION [cite: 1]
-Washington, D.C. 20549 [cite: 2]
+UNITED STATES SECURITIES AND EXCHANGE COMMISSION
+Washington, D.C. 20549
 
-# FORM 10-K [cite: 3]
+# FORM 10-K
 
-**OMB APPROVAL** [cite: 4]
-OMB Number: 3235-0063 Expires: December 31, 2026 Estimated average burden hours per response... 1,695.19 [cite: 5]
+**OMB APPROVAL**
+OMB Number: 3235-0063 Expires: December 31, 2026 Estimated average burden hours per response... 1,695.19
 
-**ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934** [cite: 6]
-
----
-
-# GENERAL INSTRUCTIONS [cite: 7]
-
-## A. Rule as to Use of Form 10-K. [cite: 8]
-* (1) This Form shall be used for annual reports pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934 (15 U.S.C. 78m or 780(d)) (the "Act") for which no other form is prescribed. [cite: 9] This Form also shall be used for transition reports filed pursuant to Section 13 or 15(d) of the Act. [cite: 10]
-* (2) Annual reports on this Form shall be filed within the following period: [cite: 11]
-    * (a) 60 days after the end of the fiscal year covered by the report (75 days for fiscal years ending before December 15, 2006) for large accelerated filers (as defined in 17 CFR 240.12b-2): [cite: 12]
-    * (b) 75 days after the end of the fiscal year covered by the report for accelerated filers (as defined in 17 CFR 240.12b-2); [cite: 13] and [cite: 14]
-    * (c) 90 days after the end of the fiscal year covered by the report for all other registrants. [cite: 15]
-* (3) Transition reports on this Form shall be filed in accordance with the requirements set forth in Rule 13a-10 (17 CFR 240.13a-10) or Rule 15d-10 (17 CFR 240.15d-10) applicable when the registrant changes its fiscal year end. [cite: 16]
-* (4) Notwithstanding paragraphs (2) and (3) of this General Instruction A., all schedules required by Article 12 of Regulation S-X (17 CFR 210.12-01-210.12-29) may, at the option of the registrant, be filed as an amendment to the report not later than 30 days after the applicable due date of the report. [cite: 17]
-
-## B. Application of General Rules and Regulations. [cite: 18]UNITED STATES SECURITIES AND EXCHANGE COMMISSION [cite: 1]
-Washington, D.C. 20549 [cite: 2]
-
-# FORM 10-K [cite: 3]
-
-**OMB APPROVAL** [cite: 4]
-OMB Number: 3235-0063 Expires: December 31, 2026 Estimated average burden hours per response... 1,695.19 [cite: 5]
-
-**ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934** [cite: 6]
+**ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934**
 
 ---
 
-# GENERAL INSTRUCTIONS [cite: 7]
+# GENERAL INSTRUCTIONS
 
-## A. Rule as to Use of Form 10-K. [cite: 8]
-* (1) This Form shall be used for annual reports pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934 (15 U.S.C. 78m or 780(d)) (the "Act") for which no other form is prescribed. [cite: 9] This Form also shall be used for transition reports filed pursuant to Section 13 or 15(d) of the Act. [cite: 10]
-* (2) Annual reports on this Form shall be filed within the following period: [cite: 11]
-    * (a) 60 days after the end of the fiscal year covered by the report (75 days for fiscal years ending before December 15, 2006) for large accelerated filers (as defined in 17 CFR 240.12b-2): [cite: 12]
-    * (b) 75 days after the end of the fiscal year covered by the report for accelerated filers (as defined in 17 CFR 240.12b-2); [cite: 13] and [cite: 14]
-    * (c) 90 days after the end of the fiscal year covered by the report for all other registrants. [cite: 15]
-* (3) Transition reports on this Form shall be filed in accordance with the requirements set forth in Rule 13a-10 (17 CFR 240.13a-10) or Rule 15d-10 (17 CFR 240.15d-10) applicable when the registrant changes its fiscal year end. [cite: 16]
-* (4) Notwithstanding paragraphs (2) and (3) of this General Instruction A., all schedules required by Article 12 of Regulation S-X (17 CFR 210.12-01-210.12-29) may, at the option of the registrant, be filed as an amendment to the report not later than 30 days after the applicable due date of the report. [cite: 17]
+## A. Rule as to Use of Form 10-K.
+* (1) This Form shall be used for annual reports pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934 (15 U.S.C. 78m or 780(d)) (the "Act") for which no other form is prescribed. This Form also shall be used for transition reports filed pursuant to Section 13 or 15(d) of the Act.
+* (2) Annual reports on this Form shall be filed within the following period:
+    * (a) 60 days after the end of the fiscal year covered by the report (75 days for fiscal years ending before December 15, 2006) for large accelerated filers (as defined in 17 CFR 240.12b-2):
+    * (b) 75 days after the end of the fiscal year covered by the report for accelerated filers (as defined in 17 CFR 240.12b-2); and
+    * (c) 90 days after the end of the fiscal year covered by the report for all other registrants.
+* (3) Transition reports on this Form shall be filed in accordance with the requirements set forth in Rule 13a-10 (17 CFR 240.13a-10) or Rule 15d-10 (17 CFR 240.15d-10) applicable when the registrant changes its fiscal year end.
+* (4) Notwithstanding paragraphs (2) and (3) of this General Instruction A., all schedules required by Article 12 of Regulation S-X (17 CFR 210.12-01-210.12-29) may, at the option of the registrant, be filed as an amendment to the report not later than 30 days after the applicable due date of the report.
 
-## B. Application of General Rules and Regulations. [cite: 18]
-* (1) The General Rules and Regulations under the Act (17 CFR 240) contain certain general requirements which are applicable to reports on any form. [cite: 19] These general requirements should be carefully read and observed in the preparation and filing of reports on this Form. [cite: 20]
-SEC 1673 (02-25) [cite: 21] Potential persons who are to respond to the collection of information contained in this Form are not required to respond unless the Form displays a currently valid OMB control number. [cite: 22] Board of Governors of the Federal Reserve System [cite: 23] OMB Number 7100-0091 [cite: 24] Approval expires August 31, 2026 [cite: 25]
-* (2) Particular attention is directed to Regulation 12B which contains general requirements regarding matters such as the kind and size of paper to be used, the legibility of the report, the information to be given whenever the title of securities is required to be stated, and the filing of the report. [cite: 26] The definitions contained in Rule 12b-2 should be especially noted. See also Regulations 13A and 15D. [cite: 27]
+## B. Application of General Rules and Regulations.
+* (1) The General Rules and Regulations under the Act (17 CFR 240) contain certain general requirements which are applicable to reports on any form. These general requirements should be carefully read and observed in the preparation and filing of reports on this Form.
+SEC 1673 (02-25) Potential persons who are to respond to the collection of information contained in this Form are not required to respond unless the Form displays a currently valid OMB control number. Board of Governors of the Federal Reserve System OMB Number 7100-0091 Approval expires August 31, 2026
+* (2) Particular attention is directed to Regulation 12B which contains general requirements regarding matters such as the kind and size of paper to be used, the legibility of the report, the information to be given whenever the title of securities is required to be stated, and the filing of the report. The definitions contained in Rule 12b-2 should be especially noted. See also Regulations 13A and 15D.
 
-## C. Preparation of Report. [cite: 28]
-* (1) This Form is not to be used as a blank form to be filled in, but only as a guide in the preparation of the report on paper meeting the requirements of Rule 12b-12. [cite: 29] Except as provided in General Instruction G, the answers to the items shall be prepared in the manner specified in Rule 12b-13. [cite: 30]
-* (2) [cite: 31] Except where information is required to be given for the fiscal year or as of a specified date, it shall be given as of the latest practicable date. [cite: 32]
-* (3) Attention is directed to Rule 12b-20, which states: "In addition to the information expressly required to be included in a statement or report, there shall be added such further material information, if any, as may be necessary to make the required statements, in the light of the circumstances under which they are made, not misleading. [cite: 33]
+## C. Preparation of Report.
+* (1) This Form is not to be used as a blank form to be filled in, but only as a guide in the preparation of the report on paper meeting the requirements of Rule 12b-12. Except as provided in General Instruction G, the answers to the items shall be prepared in the manner specified in Rule 12b-13.
+* (2) Except where information is required to be given for the fiscal year or as of a specified date, it shall be given as of the latest practicable date.
+* (3) Attention is directed to Rule 12b-20, which states: "In addition to the information expressly required to be included in a statement or report, there shall be added such further material information, if any, as may be necessary to make the required statements, in the light of the circumstances under which they are made, not misleading.
 
-## D. Signature and Filing of Report. [cite: 34]
-* (1) Three complete copies of the report, including financial statements, financial statement schedules, exhibits, and all other papers and documents filed as a part thereof, and five additional copies which need not include exhibits, shall be filed with the Commission. [cite: 35] At least one complete copy of the report, including financial statements, financial statement schedules, exhibits, and all other papers and documents filed as a part thereof, shall be filed with each exchange on which any class of securities of the registrant is registered. [cite: 36] At least one complete copy of the report filed with the Commission and one such copy filed with each exchange shall be manually signed. [cite: 37] Copies not manually signed shall bear typed or printed signatures. [cite: 38]
+## D. Signature and Filing of Report.
+* (1) Three complete copies of the report, including financial statements, financial statement schedules, exhibits, and all other papers and documents filed as a part thereof, and five additional copies which need not include exhibits, shall be filed with the Commission. At least one complete copy of the report, including financial statements, financial statement schedules, exhibits, and all other papers and documents filed as a part thereof, shall be filed with each exchange on which any class of securities of the registrant is registered. At least one complete copy of the report filed with the Commission and one such copy filed with each exchange shall be manually signed. Copies not manually signed shall bear typed or printed signatures.
 * (2) 
-    * (a) The report must be signed by the registrant, and on behalf of the registrant by its principal executive officer or officers, its principal financial officer or officers, its controller or principal accounting officer, and by at least the majority of the board of directors or persons performing similar functions. [cite: 39] Where the registrant is a limited partnership, the report must be signed by the majority of the board of directors of any corporate general partner who signs the report. [cite: 40]
-    * (b) The name of each person who signs the report shall be typed or printed beneath his signature. [cite: 41] Any person who occupies more than one of the specified positions shall indicate each capacity in which he signs the report. [cite: 42] Attention is directed to Rule 12b-11 (17 CFR 240.12b-11) concerning manual signatures and signatures pursuant to powers of attorney. [cite: 43]
-2 of 19 [cite: 44]
-* (3) Registrants are requested to indicate in a transmittal letter with the Form 10-K whether the financial statements in the report reflect a change from the preceding year in any accounting principles or practices, or in the method of applying any such principles or practices. [cite: 45]
+    * (a) The report must be signed by the registrant, and on behalf of the registrant by its principal executive officer or officers, its principal financial officer or officers, its controller or principal accounting officer, and by at least the majority of the board of directors or persons performing similar functions. Where the registrant is a limited partnership, the report must be signed by the majority of the board of directors of any corporate general partner who signs the report.
+    * (b) The name of each person who signs the report shall be typed or printed beneath his signature. Any person who occupies more than one of the specified positions shall indicate each capacity in which he signs the report. Attention is directed to Rule 12b-11 (17 CFR 240.12b-11) concerning manual signatures and signatures pursuant to powers of attorney.
+2 of 19
+* (3) Registrants are requested to indicate in a transmittal letter with the Form 10-K whether the financial statements in the report reflect a change from the preceding year in any accounting principles or practices, or in the method of applying any such principles or practices.
 
-## E. Disclosure With Respect to Foreign Subsidiaries. [cite: 46]
-Information required by any item or other requirement of this Form with respect to any foreign subsidiary may be omitted to the extent that the required disclosure would be detrimental to the registrant. [cite: 47] However, financial statements and financial statement schedules, otherwise required, shall not be omitted pursuant to this Instruction. [cite: 48] Where information is omitted pursuant to this Instruction, a statement shall be made that such information has been omitted and the names of the subsidiaries involved shall be separately furnished to the Commission. [cite: 49] The Commission may, in its discretion, call for justification that the required disclosure would be detrimental. [cite: 50]
+## E. Disclosure With Respect to Foreign Subsidiaries.
+Information required by any item or other requirement of this Form with respect to any foreign subsidiary may be omitted to the extent that the required disclosure would be detrimental to the registrant. However, financial statements and financial statement schedules, otherwise required, shall not be omitted pursuant to this Instruction. Where information is omitted pursuant to this Instruction, a statement shall be made that such information has been omitted and the names of the subsidiaries involved shall be separately furnished to the Commission. The Commission may, in its discretion, call for justification that the required disclosure would be detrimental.
 
-## F. Information as to Employee Stock Purchase, Savings and Similar Plans. [cite: 51]
-Attention is directed to Rule 15d-21 which provides that separate annual and other reports need not be filed pursuant to Section 15(d) of the Act with respect to any employee stock purchase, savings or similar plan if the issuer of the stock or other securities offered to employees pursuant to the plan furnishes to the Commission the information and documents specified in the Rule. [cite: 52]
+## F. Information as to Employee Stock Purchase, Savings and Similar Plans.
+Attention is directed to Rule 15d-21 which provides that separate annual and other reports need not be filed pursuant to Section 15(d) of the Act with respect to any employee stock purchase, savings or similar plan if the issuer of the stock or other securities offered to employees pursuant to the plan furnishes to the Commission the information and documents specified in the Rule.
 
-## G. Information to be Incorporated by Reference. [cite: 53]
-* (1) Attention is directed to Rule 12b-23 which provides for the incorporation by reference of information contained in certain documents in answer or partial answer to any item of a report. [cite: 54]
-* (2) The information called for by Parts I and II of this Form (Items through 9A or any portion thereof) may, at the registrant's option, be incorporated by reference from the registrant's annual report to security holders furnished to the Commission pursuant to Rule 14a-3(b) or Rule 14c-3(a) or from the registrant's annual report to security holders, even if not furnished to the Commission pursuant to Rule 14a-3(b) or Rule 14c-3(a), provided such annual report contains the information required by Rule 14a-3. [cite: 55]
-    * Note 1. In order to fulfill the requirements of Part I of Form 10-K, the incorporated portion of the annual report to security holders must contain the information required by Items 1-3 of Form 10-K; [cite: 56] to the extent applicable. [cite: 57]
-    * Note 2. If any information required by Part I or Part II is incorporated by reference into an electronic format document from the annual report to security holders as provided in General Instruction G, any portion of the annual report to security holders incorporated by reference shall be filed as an exhibit in electronic format, as required by Item 601(b)(13) of Regulation S-K. [cite: 58]
-3 of 19 [cite: 59]
-* (3) The information required by Part III (Items 10, 11, 12, 13 and 14) may be incorporated by reference from the registrant's definitive proxy statement (filed or required to be filed pursuant to Regulation 14A) or definitive information statement (filed or to be filed pursuant to Regulation 14C) which involves the election of directors, if such definitive proxy statement or information statement is filed with the Commission not later than 120 days after the end of the fiscal year covered by the Form 10-K. [cite: 60] However, if such definitive proxy statement or information statement is not filed with the Commission in the 120-day period or is not required to be filed with the Commission by virtue of Rule 3a12-3(b) under the Exchange Act, the Items comprising the Part III information must be filed as part of the Form 10-K, or as an amendment to the Form 10-K, not later than the end of the 120-day period. [cite: 61] It should be noted that the information regarding executive officers required by Item 401 of Regulation S-K (§ 229.401 of this chapter) may be included in Part I of Form 10-K under an appropriate caption. [cite: 62] See the Instruction to Item 401 of Regulation S-K (§ 229.401 of this chapter). [cite: 63]
-* (4) No item numbers of captions of items need be contained in the material incorporated by reference into the report. [cite: 64] When the registrant combines all of the information in Parts I and II of this Form (Items 1 through 9A) by incorporation by reference from the registrant's annual report to security holders and all of the information in Part III of this Form (Items 10 through 14) by incorporating by reference from a definitive proxy statement or information statement involving the election of directors, then, notwithstanding General Instruction $C(1)$, this Form shall consist of the facing or cover page, those sections incorporated from the annual report to security holders, the proxy or information statement, and the information, if any, required [cite: 65] by Part IV of this Form, signatures, and a cross-reference sheet setting forth the item numbers and captions in Parts I, II and III of this Form and the page and/or pages in the referenced materials where the corresponding information appears. [cite: 66]
+## G. Information to be Incorporated by Reference.
+* (1) Attention is directed to Rule 12b-23 which provides for the incorporation by reference of information contained in certain documents in answer or partial answer to any item of a report.
+* (2) The information called for by Parts I and II of this Form (Items through 9A or any portion thereof) may, at the registrant's option, be incorporated by reference from the registrant's annual report to security holders furnished to the Commission pursuant to Rule 14a-3(b) or Rule 14c-3(a) or from the registrant's annual report to security holders, even if not furnished to the Commission pursuant to Rule 14a-3(b) or Rule 14c-3(a), provided such annual report contains the information required by Rule 14a-3.
+    * Note 1. In order to fulfill the requirements of Part I of Form 10-K, the incorporated portion of the annual report to security holders must contain the information required by Items 1-3 of Form 10-K; to the extent applicable.
+    * Note 2. If any information required by Part I or Part II is incorporated by reference into an electronic format document from the annual report to security holders as provided in General Instruction G, any portion of the annual report to security holders incorporated by reference shall be filed as an exhibit in electronic format, as required by Item 601(b)(13) of Regulation S-K.
+3 of 19
+* (3) The information required by Part III (Items 10, 11, 12, 13 and 14) may be incorporated by reference from the registrant's definitive proxy statement (filed or required to be filed pursuant to Regulation 14A) or definitive information statement (filed or to be filed pursuant to Regulation 14C) which involves the election of directors, if such definitive proxy statement or information statement is filed with the Commission not later than 120 days after the end of the fiscal year covered by the Form 10-K. However, if such definitive proxy statement or information statement is not filed with the Commission in the 120-day period or is not required to be filed with the Commission by virtue of Rule 3a12-3(b) under the Exchange Act, the Items comprising the Part III information must be filed as part of the Form 10-K, or as an amendment to the Form 10-K, not later than the end of the 120-day period. It should be noted that the information regarding executive officers required by Item 401 of Regulation S-K (§ 229.401 of this chapter) may be included in Part I of Form 10-K under an appropriate caption. See the Instruction to Item 401 of Regulation S-K (§ 229.401 of this chapter).
+* (4) No item numbers of captions of items need be contained in the material incorporated by reference into the report. When the registrant combines all of the information in Parts I and II of this Form (Items 1 through 9A) by incorporation by reference from the registrant's annual report to security holders and all of the information in Part III of this Form (Items 10 through 14) by incorporating by reference from a definitive proxy statement or information statement involving the election of directors, then, notwithstanding General Instruction $C(1)$, this Form shall consist of the facing or cover page, those sections incorporated from the annual report to security holders, the proxy or information statement, and the information, if any, required by Part IV of this Form, signatures, and a cross-reference sheet setting forth the item numbers and captions in Parts I, II and III of this Form and the page and/or pages in the referenced materials where the corresponding information appears.
 
-## H. Integrated Reports to Security Holders. [cite: 67]
-Annual reports to security holders may be combined with the required information of Form 10-K and will be suitable for filing with the Commission if the following conditions are satisfied: [cite: 68]
-* (1) The combined report contains full and complete answers to all items required by Form 10-K. [cite: 69] When responses to a certain item of required disclosure are separated within the combined report, an appropriate cross-reference should be made. [cite: 70] If the information required by Part III of Form 10-K is omitted by virtue of General Instruction G, a definitive proxy or information statement shall be filed. [cite: 71]
-* (2) The cover page and the required signatures are included. [cite: 72] As appropriate, a cross-reference sheet should be filed indicating the location of information required by the items of the Form. [cite: 73]
-* (3) If an electronic filer files any portion of an annual report to security holders in combination with the required information of Form 10-K, as provided in this instruction, only such portions filed in satisfaction of the Form 10-K requirements shall be filed in electronic format. [cite: 74]
-4 of 19 [cite: 75]
+## H. Integrated Reports to Security Holders.
+Annual reports to security holders may be combined with the required information of Form 10-K and will be suitable for filing with the Commission if the following conditions are satisfied:
+* (1) The combined report contains full and complete answers to all items required by Form 10-K. When responses to a certain item of required disclosure are separated within the combined report, an appropriate cross-reference should be made. If the information required by Part III of Form 10-K is omitted by virtue of General Instruction G, a definitive proxy or information statement shall be filed.
+* (2) The cover page and the required signatures are included. As appropriate, a cross-reference sheet should be filed indicating the location of information required by the items of the Form.
+* (3) If an electronic filer files any portion of an annual report to security holders in combination with the required information of Form 10-K, as provided in this instruction, only such portions filed in satisfaction of the Form 10-K requirements shall be filed in electronic format.
+4 of 19
 
-## I. [cite: 76] Omission of Information by Certain Wholly-Owned Subsidiaries. [cite: 77]
-If, on the date of the filing of its report on Form 10-K, the registrant meets the conditions specified in paragraph (1) below, then such registrant may furnish the abbreviated narrative disclosure specified in paragraph (2) below. [cite: 78]
-* (1) Conditions for availability of the relief specified in paragraph (2) below. [cite: 79]
-    * (a) All of the registrant's equity securities are owned, either directly or indirectly, by a single person which is a reporting company under the Act and which has filed all the material required to be filed pursuant to section 13, 14, or 15(d) thereof, as applicable, and which is named in conjunction with the registrant's description of its business; [cite: 80]
-    * (b) During the preceding thirty-six calendar months and any subsequent period of days, there has not been any material default in the payment of principal, interest, a sinking or purchase fund installment, or any other material default not cured within thirty days, with respect to any indebtedness of the registrant or its subsidiaries, and there has not been any material default in the payment of rentals under material long-term leases; [cite: 81]
-    * (c) There is prominently set forth, on the cover page of the Form 10-K, a statement that the registrant meets the conditions set forth in General Instruction (I)(1)(a) and (b) of Form 10-K and is therefore filing this Form with the reduced disclosure format; [cite: 82] and [cite: 83]
-    * (d) The registrant is not an asset-backed issuer, as defined in Item 1101 of Regulation AB (17 CFR 229.1101). [cite: 84]
-* (2) Registrants meeting the conditions specified in paragraph (1) above are entitled to the following relief: [cite: 85]
-    * (a) Such registrants may omit the information called for by Item 7, Management's Discussion and Analysis of Financial Condition and Results of Operations provided that the registrant includes in the Form 10-K a management's narrative analysis of the results of operations explaining the reasons for material changes in the amount of revenue and expense items between the most recent fiscal year presented and the fiscal year immediately preceding it. [cite: 86] Explanations of material changes should include, but not be limited to, changes in the various elements which determine revenue and expense levels such as unit sales volume, prices charged and paid, production levels, production cost variances, labor costs and discretionary spending programs. [cite: 87] In addition, the analysis should include an explanation of the effect of any changes in accounting principles and practices or method of application that have a material effect on net income as reported. [cite: 88]
-    * (b) Such registrants may omit the list of subsidiaries exhibit required by Item 601 of Regulation S-K (§ 229.601 of this chapter). [cite: 89]
-    5 of 19 [cite: 90]
-    * (c) Such registrants may omit the information called for by the following otherwise required Items: Item 10, Directors and Executive Officers of the Registrant; [cite: 91] Item 11, Executive Compensation; Item 12, Security Ownership of Certain Beneficial Owners and Management; [cite: 92] and Item 13, Certain Relationships and Related Transactions. [cite: 93]
-    * (d) In response to Item 1, Business, such registrant only need furnish a brief description of the business done by the registrant and its subsidiaries during the most recent fiscal year which will, in the opinion of management, indicate the general nature and scope of the business of the registrant and its subsidiaries, and in response to Item 2, Properties, such registrant only need furnish a brief description of the material properties of the registrant and its subsidiaries to the extent, in the opinion of the management, necessary to an understanding of the business done by the registrant and its [cite: 94] subsidiaries. [cite: 95]
+## I. Omission of Information by Certain Wholly-Owned Subsidiaries.
+If, on the date of the filing of its report on Form 10-K, the registrant meets the conditions specified in paragraph (1) below, then such registrant may furnish the abbreviated narrative disclosure specified in paragraph (2) below.
+* (1) Conditions for availability of the relief specified in paragraph (2) below.
+    * (a) All of the registrant's equity securities are owned, either directly or indirectly, by a single person which is a reporting company under the Act and which has filed all the material required to be filed pursuant to section 13, 14, or 15(d) thereof, as applicable, and which is named in conjunction with the registrant's description of its business;
+    * (b) During the preceding thirty-six calendar months and any subsequent period of days, there has not been any material default in the payment of principal, interest, a sinking or purchase fund installment, or any other material default not cured within thirty days, with respect to any indebtedness of the registrant or its subsidiaries, and there has not been any material default in the payment of rentals under material long-term leases;
+    * (c) There is prominently set forth, on the cover page of the Form 10-K, a statement that the registrant meets the conditions set forth in General Instruction (I)(1)(a) and (b) of Form 10-K and is therefore filing this Form with the reduced disclosure format; and
+    * (d) The registrant is not an asset-backed issuer, as defined in Item 1101 of Regulation AB (17 CFR 229.1101).
+* (2) Registrants meeting the conditions specified in paragraph (1) above are entitled to the following relief:
+    * (a) Such registrants may omit the information called for by Item 7, Management's Discussion and Analysis of Financial Condition and Results of Operations provided that the registrant includes in the Form 10-K a management's narrative analysis of the results of operations explaining the reasons for material changes in the amount of revenue and expense items between the most recent fiscal year presented and the fiscal year immediately preceding it. Explanations of material changes should include, but not be limited to, changes in the various elements which determine revenue and expense levels such as unit sales volume, prices charged and paid, production levels, production cost variances, labor costs and discretionary spending programs. In addition, the analysis should include an explanation of the effect of any changes in accounting principles and practices or method of application that have a material effect on net income as reported.
+    * (b) Such registrants may omit the list of subsidiaries exhibit required by Item 601 of Regulation S-K (§ 229.601 of this chapter).
+    5 of 19
+    * (c) Such registrants may omit the information called for by the following otherwise required Items: Item 10, Directors and Executive Officers of the Registrant; Item 11, Executive Compensation; Item 12, Security Ownership of Certain Beneficial Owners and Management; and Item 13, Certain Relationships and Related Transactions.
+    * (d) In response to Item 1, Business, such registrant only need furnish a brief description of the business done by the registrant and its subsidiaries during the most recent fiscal year which will, in the opinion of management, indicate the general nature and scope of the business of the registrant and its subsidiaries, and in response to Item 2, Properties, such registrant only need furnish a brief description of the material properties of the registrant and its subsidiaries to the extent, in the opinion of the management, necessary to an understanding of the business done by the registrant and its subsidiaries.
 
-## J. Use of this Form by Asset-Backed Issuers. [cite: 96]
-The following applies to registrants that are asset-backed issuers. Terms used in this General Instruction J. have the same meaning as in Item 1101 of Regulation AB (17 CFR 229.1101). [cite: 97]
-* (1) Items that May be Omitted. Such registrants may omit the information called for by the following otherwise required Items: [cite: 98]
-    * (a) Item 1, Business; [cite: 99]
-    * (b) Item 1A, Risk Factors and Item IC, Cybersecurity; [cite: 100]
-    * (c) Item 2, Properties; [cite: 101]
-    * (d) Item 3, Legal Proceedings; [cite: 102]
-    * (e) [cite: 103] [RESERVED]; [cite: 104]
-    * (f) Item 5, Market for Registrant's Common Equity, Related Stockholder Matters and [cite: 105]
-    * (g) [cite: 106] Issuer Purchases of Equity Securities; [cite: 107] [RESERVED]; [cite: 108]
-    * (h) Item 7, Management's Discussion and Analysis of Financial Condition and [cite: 109] Results of Operations; [cite: 110]
-    * (i) [cite: 111] Item 7A, Quantitative and Qualitative Disclosures About Market Risk; [cite: 112]
-    * (j) Item 8, Financial Statements and Supplementary Data; [cite: 113]
-    * (k) Item 9, Changes in and Disagreements With Accountants on Accounting and Financial Disclosure; [cite: 114]
-    * (1) Item 9A, Controls and Procedures; [cite: 115]
-    * (m) If the issuing entity does not have any executive officers or directors, Item 10, Directors and Executive Officers of the Registrant, Item 11, Executive Compensation, Item 12, Security Ownership of Certain Beneficial Owners and Management, and Item 13, Certain Relationships and Related Transactions; [cite: 116] and [cite: 117]
-    * (n) Item 14, Principal Accountant Fees and Services. [cite: 118]
-6 of 19 [cite: 119]
+## J. Use of this Form by Asset-Backed Issuers.
+The following applies to registrants that are asset-backed issuers. Terms used in this General Instruction J. have the same meaning as in Item 1101 of Regulation AB (17 CFR 229.1101).
+* (1) Items that May be Omitted. Such registrants may omit the information called for by the following otherwise required Items:
+    * (a) Item 1, Business;
+    * (b) Item 1A, Risk Factors and Item IC, Cybersecurity;
+    * (c) Item 2, Properties;
+    * (d) Item 3, Legal Proceedings;
+    * (e) [RESERVED];
+    * (f) Item 5, Market for Registrant's Common Equity, Related Stockholder Matters and
+    * (g) Issuer Purchases of Equity Securities; [RESERVED];
+    * (h) Item 7, Management's Discussion and Analysis of Financial Condition and Results of Operations;
+    * (i) Item 7A, Quantitative and Qualitative Disclosures About Market Risk;
+    * (j) Item 8, Financial Statements and Supplementary Data;
+    * (k) Item 9, Changes in and Disagreements With Accountants on Accounting and Financial Disclosure;
+    * (1) Item 9A, Controls and Procedures;
+    * (m) If the issuing entity does not have any executive officers or directors, Item 10, Directors and Executive Officers of the Registrant, Item 11, Executive Compensation, Item 12, Security Ownership of Certain Beneficial Owners and Management, and Item 13, Certain Relationships and Related Transactions; and
+    * (n) Item 14, Principal Accountant Fees and Services.
+6 of 19
 
-* (2) Substitute Information to be Included. In addition to the Items that are otherwise required by this Form, the registrant must furnish in the Form 10-K the following information: [cite: 120]
-    * (a) Immediately after the name of the issuing entity on the cover page of the Form 10-K, as separate line items, the exact name of the depositor as specified in its charter and the exact name of the sponsor as specified in its charter. [cite: 121] Include a Central Index Key number for the depositor and the issuing entity, and if available, the sponsor. [cite: 122]
-    * (b) [cite: 123] Item 1112(b) of Regulation AB; [cite: 124]
-    * (c) [cite: 125] Items 1114(b)(2) and 1115(b) of Regulation AB; [cite: 126]
-    * (d) [cite: 127] Item 1117 of Regulation AB; [cite: 128]
-    * (e) [cite: 129] Item 1119 of Regulation AB; [cite: 130]
-    * (f) [cite: 131] Item 1122 of Regulation AB; and [cite: 132]
-    * (g) Item 1123 of Regulation AB. [cite: 133]
-* (3) Signatures. [cite: 134] The Form 10-K must be signed either: [cite: 135]
-    * (a) On behalf of the depositor by the senior officer in charge of securitization of the depositor; or [cite: 136]
-    * (b) On behalf of the issuing entity by the senior officer in charge of the servicing function of the servicer. [cite: 137] If multiple servicers are involved in servicing the pool assets, the senior officer in charge of the servicing function of the master servicer (or entity performing the equivalent function) must sign if a representative of the servicer is to sign the report on behalf of the issuing entity. [cite: 138]
-7 of 19 [cite: 139]
+* (2) Substitute Information to be Included. In addition to the Items that are otherwise required by this Form, the registrant must furnish in the Form 10-K the following information:
+    * (a) Immediately after the name of the issuing entity on the cover page of the Form 10-K, as separate line items, the exact name of the depositor as specified in its charter and the exact name of the sponsor as specified in its charter. Include a Central Index Key number for the depositor and the issuing entity, and if available, the sponsor.
+    * (b) Item 1112(b) of Regulation AB;
+    * (c) Items 1114(b)(2) and 1115(b) of Regulation AB;
+    * (d) Item 1117 of Regulation AB;
+    * (e) Item 1119 of Regulation AB;
+    * (f) Item 1122 of Regulation AB; and
+    * (g) Item 1123 of Regulation AB.
+* (3) Signatures. The Form 10-K must be signed either:
+    * (a) On behalf of the depositor by the senior officer in charge of securitization of the depositor; or
+    * (b) On behalf of the issuing entity by the senior officer in charge of the servicing function of the servicer. If multiple servicers are involved in servicing the pool assets, the senior officer in charge of the servicing function of the master servicer (or entity performing the equivalent function) must sign if a representative of the servicer is to sign the report on behalf of the issuing entity.
+7 of 19
 
 ---
 
-(Mark One) [cite: 140]
-UNITED STATES [cite: 141]
-SECURITIES AND EXCHANGE COMMISSION [cite: 142]
-Washington, D.C. 20549 [cite: 143]
+(Mark One)
+UNITED STATES
+SECURITIES AND EXCHANGE COMMISSION
+Washington, D.C. 20549
 
-# FORM 10-K [cite: 144]
+# FORM 10-K
 
-[ ] ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 [cite: 145]
-For the fiscal year ended [cite: 146]
-or [cite: 147]
-[ ] TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 [cite: 148]
-For the transition period from [cite: 149] Commission file number [cite: 150] to
-(I.R.S. Employer Identification No.) [cite: 152]
-(Zip Code) [cite: 153]
-(Exact name of registrant as specified in its charter) [cite: 154]
-State or other jurisdiction of [cite: 155] incorporation or organization [cite: 156]
-(Address of principal executive offices) [cite: 157]
-Registrant's telephone number, including area code [cite: 158]
+[ ] ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934
+For the fiscal year ended
+or
+[ ] TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934
+For the transition period from Commission file number to
+(I.R.S. Employer Identification No.)
+(Zip Code)
+(Exact name of registrant as specified in its charter)
+State or other jurisdiction of incorporation or organization
+(Address of principal executive offices)
+Registrant's telephone number, including area code
 
-Securities registered pursuant to Section 12(b) of the Act: [cite: 159]
-Title of each class [cite: 160] Trading Symbol(s) [cite: 161] Name of each exchange on which registered [cite: 162]
-8 of 19 [cite: 163]
+Securities registered pursuant to Section 12(b) of the Act:
+Title of each class Trading Symbol(s) Name of each exchange on which registered
+8 of 19
 
-Securities registered pursuant to section 12(g) of the Act: [cite: 164]
-(Title of class) [cite: 165]
-(Title of class) [cite: 166]
+Securities registered pursuant to section 12(g) of the Act:
+(Title of class)
+(Title of class)
 
-Indicate by check mark if the registrant is a well-known seasoned issuer, as defined in Rule 405 of the Securities Act. [cite: 167]
-[ ] [cite: 168] Yes [cite: 169] No [cite: 170] [ ] [cite: 171]
+Indicate by check mark if the registrant is a well-known seasoned issuer, as defined in Rule 405 of the Securities Act.
+[ ] Yes No [ ]
 
-Indicate by check mark if the registrant is not required to file reports pursuant to Section 13 or Section 15(d) of the Act. [cite: 172]
-[ ] [cite: 173] Yes [cite: 174] [ ] No [cite: 175]
-Note - Checking the box above will not relieve any registrant required to file reports pursuant to Section 13 or 15(d) of the Exchange Act from their obligations under those Sections. [cite: 176]
+Indicate by check mark if the registrant is not required to file reports pursuant to Section 13 or Section 15(d) of the Act.
+[ ] Yes [ ] No
+Note - Checking the box above will not relieve any registrant required to file reports pursuant to Section 13 or 15(d) of the Exchange Act from their obligations under those Sections.
 
-Indicate by check mark whether the registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding 12 months (or for such shorter period that the registrant was required to file such reports), and (2) has been subject to such filing requirements for the past 90 days. [cite: 177]
-[ ] [cite: 178] [ ] [cite: 179] Yes [cite: 180] No [cite: 181]
+Indicate by check mark whether the registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding 12 months (or for such shorter period that the registrant was required to file such reports), and (2) has been subject to such filing requirements for the past 90 days.
+[ ] [ ] Yes No
 
-Indicate by check mark whether the registrant has submitted electronically every Interactive Data File required to be submitted pursuant to Rule 405 of Regulation S-T (§ 232.405 of this chapter) during the preceding 12 months (or for such shorter period that the registrant was required to submit such files). [cite: 182]
-[ ] [ ] Yes No [cite: 183]
+Indicate by check mark whether the registrant has submitted electronically every Interactive Data File required to be submitted pursuant to Rule 405 of Regulation S-T (§ 232.405 of this chapter) during the preceding 12 months (or for such shorter period that the registrant was required to submit such files).
+[ ] [ ] Yes No
 
-Indicate by check mark whether the registrant is a large accelerated filer, an accelerated filer, a non-accelerated filer, a smaller reporting company, or an emerging growth company. [cite: 184] See the definitions of "large accelerated filer," "accelerated filer," "smaller reporting company" and "emerging growth company" in Rule 12b-2 of the Exchange Act. [cite: 185]
-[ ] Large accelerated filer [cite: 186]
-[ ] Accelerated filer [cite: 187]
-Non-accelerated filer [ ] [cite: 188]
-[ ] [cite: 189]
+Indicate by check mark whether the registrant is a large accelerated filer, an accelerated filer, a non-accelerated filer, a smaller reporting company, or an emerging growth company. See the definitions of "large accelerated filer," "accelerated filer," "smaller reporting company" and "emerging growth company" in Rule 12b-2 of the Exchange Act.
+[ ] Large accelerated filer
+[ ] Accelerated filer
+Non-accelerated filer [ ]
+[ ]
 [ ] Smaller reporting company
-[ ] Emerging growth company [cite: 190]
-If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. [cite: 191]
-9 of 19 [cite: 192]
+[ ] Emerging growth company
+If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act.
+9 of 19
 
-Indicate by check mark whether the registrant has filed a report on and attestation to its management's assessment of the effectiveness of its internal control over financial reporting under Section 404(b) of the Sarbanes-Oxley Act (15 U.S.C. 7262(b)) by the registered public accounting firm that prepared or issued its audit report. [cite: 193]
+Indicate by check mark whether the registrant has filed a report on and attestation to its management's assessment of the effectiveness of its internal control over financial reporting under Section 404(b) of the Sarbanes-Oxley Act (15 U.S.C. 7262(b)) by the registered public accounting firm that prepared or issued its audit report.
 
-If securities are registered pursuant to Section 12(b) of the Act, indicate by check mark whether the financial statements of the registrant included in the filing reflect the correction of an error to previously issued financial statements. [cite: 194]
+If securities are registered pursuant to Section 12(b) of the Act, indicate by check mark whether the financial statements of the registrant included in the filing reflect the correction of an error to previously issued financial statements.
 
-Indicate by check mark whether any of those error corrections are restatements that required a recovery analysis of incentive-based compensation received by any of the registrant's executive officers during the relevant recovery period pursuant to 240.10D-1(b). [cite: 195]
+Indicate by check mark whether any of those error corrections are restatements that required a recovery analysis of incentive-based compensation received by any of the registrant's executive officers during the relevant recovery period pursuant to 240.10D-1(b).
 
-Indicate by check mark whether the registrant is a shell company (as defined in Rule 12b-2 of the Act). Yes [cite: 196] No [cite: 197]
+Indicate by check mark whether the registrant is a shell company (as defined in Rule 12b-2 of the Act). Yes No
 
-State the aggregate market value of the voting and non-voting common equity held by non-affiliates computed by reference to the price at which the common equity was last sold, or the average bid and asked price of such common equity, as of the last business day of the registrant's most recently completed second fiscal quarter. [cite: 198]
-Note. If a determination as to whether a particular person or entity is an affiliate cannot be made without involving unreasonable effort and expense, the aggregate market value of the common stock held by non-affiliates may be calculated on the basis of assumptions reasonable under the circumstances, provided that the assumptions are set forth in this Form. [cite: 199]
+State the aggregate market value of the voting and non-voting common equity held by non-affiliates computed by reference to the price at which the common equity was last sold, or the average bid and asked price of such common equity, as of the last business day of the registrant's most recently completed second fiscal quarter.
+Note. If a determination as to whether a particular person or entity is an affiliate cannot be made without involving unreasonable effort and expense, the aggregate market value of the common stock held by non-affiliates may be calculated on the basis of assumptions reasonable under the circumstances, provided that the assumptions are set forth in this Form.
 
-APPLICABLE ONLY TO REGISTRANTS INVOLVED IN BANKRUPTCY PROCEEDINGS DURING THE PRECEDING FIVE YEARS: [cite: 200]
-Indicate by check mark whether the registrant has filed all documents and reports required to be filed by Section 12, 13 or 15(d) of the Securities Exchange Act of 1934 subsequent to the distribution of securities under a plan confirmed by a court. [cite: 201] Yes [cite: 202]
-(APPLICABLE ONLY TO CORPORATE REGISTRANTS) [cite: 203] [ ] [cite: 204]
-Indicate the number of shares outstanding of each of the registrant's classes of common stock, as of the latest practicable date. [cite: 205]
+APPLICABLE ONLY TO REGISTRANTS INVOLVED IN BANKRUPTCY PROCEEDINGS DURING THE PRECEDING FIVE YEARS:
+Indicate by check mark whether the registrant has filed all documents and reports required to be filed by Section 12, 13 or 15(d) of the Securities Exchange Act of 1934 subsequent to the distribution of securities under a plan confirmed by a court. Yes
+(APPLICABLE ONLY TO CORPORATE REGISTRANTS) [ ]
+Indicate the number of shares outstanding of each of the registrant's classes of common stock, as of the latest practicable date.
 
-DOCUMENTS INCORPORATED BY REFERENCE [cite: 206] No [cite: 207]
-List hereunder the following documents if incorporated by reference and the Part of the Form 10-K (e.g., Part I, Part II, etc.) into which the document is incorporated: (1) Any annual report to security holders; [cite: 208] (2) Any proxy or information statement; and (3) Any prospectus filed pursuant to Rule 424(b) or (c) under the Securities Act of 1933. The listed documents should be clearly described for identification purposes (e.g., annual report to security holders for fiscal year ended December 24, 1980). [cite: 209]
-10 of 19 [cite: 210]
+DOCUMENTS INCORPORATED BY REFERENCE No
+List hereunder the following documents if incorporated by reference and the Part of the Form 10-K (e.g., Part I, Part II, etc.) into which the document is incorporated: (1) Any annual report to security holders; (2) Any proxy or information statement; and (3) Any prospectus filed pursuant to Rule 424(b) or (c) under the Securities Act of 1933. The listed documents should be clearly described for identification purposes (e.g., annual report to security holders for fiscal year ended December 24, 1980).
+10 of 19
 
 ---
 
-# PART I [cite: 212]
-[See General Instruction G(2)] [cite: 213]
+# PART I
+[See General Instruction G(2)]
 
-## Item 1. Business. [cite: 211]
-Furnish the information required by Item 101 of Regulation S-K (§ 229.101 of this chapter) except that the discussion of the development of the registrant's business need only include developments since the beginning of the fiscal year for which this report is filed. [cite: 214]
+## Item 1. Business.
+Furnish the information required by Item 101 of Regulation S-K (§ 229.101 of this chapter) except that the discussion of the development of the registrant's business need only include developments since the beginning of the fiscal year for which this report is filed.
 
-## Item 1A. Risk Factors. [cite: 215]
-Set forth, under the caption "Risk Factors," where appropriate, the risk factors described in Item 105 of Regulation S-K (§ 229.105 of this chapter) applicable to the registrant. [cite: 216] Provide any discussion of risk factors in plain English in accordance with Rule 421(d) of the Securities Act of 1933 (§ 230.421(d) of this chapter). [cite: 217] Smaller reporting companies are not required to provide the information required by this item. [cite: 218]
+## Item 1A. Risk Factors.
+Set forth, under the caption "Risk Factors," where appropriate, the risk factors described in Item 105 of Regulation S-K (§ 229.105 of this chapter) applicable to the registrant. Provide any discussion of risk factors in plain English in accordance with Rule 421(d) of the Securities Act of 1933 (§ 230.421(d) of this chapter). Smaller reporting companies are not required to provide the information required by this item.
 
-## Item 1B. Unresolved Staff Comments. [cite: 219]
-If the registrant is an accelerated filer or a large accelerated filer, as defined in Rule 12b-2 of the Exchange Act (§ 240.12b-2 of this chapter), or is a well-known seasoned issuer as defined in Rule 405 of the Securities Act (§ 230.405 of this chapter) and has received written comments from the Commission staff regarding its periodic or current reports under the Act not less than 180 days before the end of its fiscal year to which the annual report relates, and such comments remain unresolved, disclose the substance of any such unresolved comments that the registrant believes are [cite: 220] material. Such disclosure may provide other information including the position of the registrant with respect to any such comment. [cite: 221]
+## Item 1B. Unresolved Staff Comments.
+If the registrant is an accelerated filer or a large accelerated filer, as defined in Rule 12b-2 of the Exchange Act (§ 240.12b-2 of this chapter), or is a well-known seasoned issuer as defined in Rule 405 of the Securities Act (§ 230.405 of this chapter) and has received written comments from the Commission staff regarding its periodic or current reports under the Act not less than 180 days before the end of its fiscal year to which the annual report relates, and such comments remain unresolved, disclose the substance of any such unresolved comments that the registrant believes are material. Such disclosure may provide other information including the position of the registrant with respect to any such comment.
 
-## Item 1C. Cybersecurity. [cite: 222]
+## Item 1C. Cybersecurity.
 Furnish the information required by Item 106 of Regulation S-K (§ 229.106 of this chapter).
 
-## Item 2. Properties. [cite: 223]
+## Item 2. Properties.
 Furnish the information required by Item 102 of Regulation S-K (§ 229.102 of this chapter).
 
-## Item 3. Legal Proceedings. [cite: 224]
-* (a) Furnish the information required by Item 103 of Regulation S-K (§ 229.103 of this chapter). [cite: 225]
-* (b) As to any proceeding that was terminated during the fourth quarter of the fiscal year covered by this report, furnish information similar to that required by Item 103 of Regulation S-K (§ 229.103 of this chapter), including the date of termination and a description of the disposition thereof with respect to the registrant and its subsidiaries. [cite: 226]
-11 of 19 [cite: 227]
+## Item 3. Legal Proceedings.
+* (a) Furnish the information required by Item 103 of Regulation S-K (§ 229.103 of this chapter).
+* (b) As to any proceeding that was terminated during the fourth quarter of the fiscal year covered by this report, furnish information similar to that required by Item 103 of Regulation S-K (§ 229.103 of this chapter), including the date of termination and a description of the disposition thereof with respect to the registrant and its subsidiaries.
+11 of 19
 
-## Item 4. Mine Safety Disclosures. [cite: 228]
-If applicable, provide a statement that the information concerning mine safety violations or other regulatory matters required by Section 1503(a) of the Dodd-Frank Wall Street Reform and Consumer Protection Act and Item 104 of Regulation S-K (17 CFR 229.104) is included in exhibit 95 to the annual report. [cite: 229]
+## Item 4. Mine Safety Disclosures.
+If applicable, provide a statement that the information concerning mine safety violations or other regulatory matters required by Section 1503(a) of the Dodd-Frank Wall Street Reform and Consumer Protection Act and Item 104 of Regulation S-K (17 CFR 229.104) is included in exhibit 95 to the annual report.
 
 ---
 
-# PART II [cite: 230]
-[See General Instruction G(2)] [cite: 231]
+# PART II
+[See General Instruction G(2)]
 
-## Item 5. Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities. [cite: 232]
-* (a) Furnish the information required by Item 201 of Regulation S-K (17 CFR 229.201) and Item 701 of Regulation S-K (17 CFR 229.701) as to all equity securities of the registrant sold by the registrant during the period covered by the report that were not registered under the Securities Act. [cite: 233] If the Item 701 information previously has been included in a Quarterly Report on Form 10-Q or in a Current Report on Form 8-K (17 CFR 249.308), it need not be furnished. [cite: 234]
-* (b) If required pursuant to Rule 463 (17 CFR 230.463) of the Securities Act of 1933, furnish the information required by Item 701(f) of Regulation S-K (§ 229.701(f) of this chapter). [cite: 235]
-* (c) Furnish the information required by Item 703 of Regulation S-K (§ 229.703 of this chapter) for any repurchase made in a month within the fourth quarter of the fiscal year covered by the report. [cite: 236] Provide disclosures covering repurchases made on a monthly basis. For example, if the fourth quarter began on January 16 and ended on April 15, the chart would show repurchases for the months from January 16 through February 15, February 16 through March 15, and March 16 through April 15. [cite: 237]
+## Item 5. Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities.
+* (a) Furnish the information required by Item 201 of Regulation S-K (17 CFR 229.201) and Item 701 of Regulation S-K (17 CFR 229.701) as to all equity securities of the registrant sold by the registrant during the period covered by the report that were not registered under the Securities Act. If the Item 701 information previously has been included in a Quarterly Report on Form 10-Q or in a Current Report on Form 8-K (17 CFR 249.308), it need not be furnished.
+* (b) If required pursuant to Rule 463 (17 CFR 230.463) of the Securities Act of 1933, furnish the information required by Item 701(f) of Regulation S-K (§ 229.701(f) of this chapter).
+* (c) Furnish the information required by Item 703 of Regulation S-K (§ 229.703 of this chapter) for any repurchase made in a month within the fourth quarter of the fiscal year covered by the report. Provide disclosures covering repurchases made on a monthly basis. For example, if the fourth quarter began on January 16 and ended on April 15, the chart would show repurchases for the months from January 16 through February 15, February 16 through March 15, and March 16 through April 15.
 
-## Item 6. [Reserved] [cite: 238]
+## Item 6. [Reserved]
 
-## Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations. [cite: 239]
+## Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations.
 Furnish the information required by Item 303 of Regulation S-K (§ 229.303 of this chapter).
 
-## Item 7A. Quantitative and Qualitative Disclosures About Market Risk. [cite: 240] [cite: 241]
-Furnish the information required by Item 305 of Regulation S-K (§ 229.305 of this chapter). [cite: 242]
+## Item 7A. Quantitative and Qualitative Disclosures About Market Risk.
+Furnish the information required by Item 305 of Regulation S-K (§ 229.305 of this chapter).
 
-## Item 8. Financial Statements and Supplementary Data. [cite: 243]
-* (a) File financial statements meeting the requirements of Regulation S-X (§ 210 of this chapter), except § 210.3-05, § 210.3-14, § 210.6-11, § 210.8-04, § 210.8-05, § 210.8-06 and Article 11 thereof, and the supplementary financial information required by Item [cite: 244] 12 of 19 [cite: 245] 302 of Regulation S-K (§ 229.302 of this chapter). Financial statements of the registrant and its subsidiaries consolidated (as required by Rule 14a-3(b)) must be filed under this item. [cite: 246] Other financial statements and schedules required under Regulation S-X may be filed as "Financial Statement Schedules" pursuant to Item 15, Exhibits, Financial Statement Schedules, and Reports on Form 8-K, of this form. [cite: 247]
-* (b) A smaller reporting company may provide the information required by Article 8 of Regulation S-X in lieu of any financial statements required by Item 8 of this Form. [cite: 248]
+## Item 8. Financial Statements and Supplementary Data.
+* (a) File financial statements meeting the requirements of Regulation S-X (§ 210 of this chapter), except § 210.3-05, § 210.3-14, § 210.6-11, § 210.8-04, § 210.8-05, § 210.8-06 and Article 11 thereof, and the supplementary financial information required by Item 12 of 19 302 of Regulation S-K (§ 229.302 of this chapter). Financial statements of the registrant and its subsidiaries consolidated (as required by Rule 14a-3(b)) must be filed under this item. Other financial statements and schedules required under Regulation S-X may be filed as "Financial Statement Schedules" pursuant to Item 15, Exhibits, Financial Statement Schedules, and Reports on Form 8-K, of this form.
+* (b) A smaller reporting company may provide the information required by Article 8 of Regulation S-X in lieu of any financial statements required by Item 8 of this Form.
 
-## Item 9. Changes in and Disagreements With Accountants on Accounting and Financial Disclosure. [cite: 249]
-Furnish the information required by Item 304(b) of Regulation S-K (§ 229.304(b) of this chapter). [cite: 250]
+## Item 9. Changes in and Disagreements With Accountants on Accounting and Financial Disclosure.
+Furnish the information required by Item 304(b) of Regulation S-K (§ 229.304(b) of this chapter).
 
 ## Item 9A. Controls and Procedures.
-Furnish the information required by Item 307 and 308 of Regulation S-K (§229.307 and §229.308 of this chapter). [cite: 251]
+Furnish the information required by Item 307 and 308 of Regulation S-K (§229.307 and §229.308 of this chapter).
 
-## Item 9B. Other Information. [cite: 252]
-* (a) The registrant must disclose under this item any information required to be disclosed in a report on Form 8-K during the fourth quarter of the year covered by this Form 10-K, but not reported, whether or not otherwise required by this Form 10-K. [cite: 253] If disclosure of such information is made under this item, it need not be repeated in a report on Form 8-K which would otherwise be required to be filed with respect to such information or in a subsequent report on Form 10-K. [cite: 254]
-* (b) Furnish the information required by Item 408(a) of Regulation S-K (§ 229.408(a) of this chapter). [cite: 255]
-**Instruction.** [cite: 256] With respect to a report on this Form regarding a class of asset-backed securities, the relevant period where disclosure is required is the period since the last required distribution report on Form 10-D (17 CFR 249.312)." [cite: 257]
+## Item 9B. Other Information.
+* (a) The registrant must disclose under this item any information required to be disclosed in a report on Form 8-K during the fourth quarter of the year covered by this Form 10-K, but not reported, whether or not otherwise required by this Form 10-K. If disclosure of such information is made under this item, it need not be repeated in a report on Form 8-K which would otherwise be required to be filed with respect to such information or in a subsequent report on Form 10-K.
+* (b) Furnish the information required by Item 408(a) of Regulation S-K (§ 229.408(a) of this chapter).
+**Instruction.** With respect to a report on this Form regarding a class of asset-backed securities, the relevant period where disclosure is required is the period since the last required distribution report on Form 10-D (17 CFR 249.312)."
 
-## Item 9C. Disclosure Regarding Foreign Jurisdictions that Prevent Inspections. [cite: 258]
-* (a) A registrant identified by the Commission pursuant to Section 104(i)(2)(A) of the Sarbanes-Oxley Act of 2002 (15 U.S.C. 7214(i)(2)(A)) as having retained, for the preparation of the audit report on its financial statements included in the Form 10-K, a registered public accounting firm that has a branch or office that is located in a foreign jurisdiction and that the Public Company Accounting Oversight Board has determined it is unable to inspect or investigate completely because of a position taken by an authority in the foreign jurisdiction must electronically submit to the Commission on a supplemental basis documentation that establishes [cite: 259] that the registrant is not owned or [cite: 260] 13 of 19 [cite: 261] controlled by a governmental entity in the foreign jurisdiction. The registrant must submit this documentation on or before the due date for this Form. [cite: 262] A registrant that is owned or controlled by a foreign governmental entity is not required to submit such documentation. [cite: 263]
-* (b) A registrant that is a foreign issuer, as defined in 17 CFR 240.3b-4, identified by the Commission pursuant to Section 104(i) (2)(A) of the Sarbanes-Oxley Act of 2002 (15 U.S.C. 7214(i)(2)(A)) as having retained, for the preparation of the audit report on its financial statements included in the Form 10-K, a registered public accounting firm that has a branch or office that is located in a foreign jurisdiction and that the Public Company Accounting Oversight Board has determined it is unable to inspect or investigate completely because of a position taken by an authority in the foreign jurisdiction, for [cite: 264] each year in which the registrant is so identified, must provide the below disclosures. [cite: 265] Also, any such identified foreign issuer that uses a variable-interest entity or any similar structure that results in additional foreign entities being consolidated in the financial statements of the registrant is required to provide the below disclosures for itself and its consolidated foreign operating entity or entities. [cite: 266] A registrant must disclose: [cite: 267]
-    * (1) That, for the immediately preceding annual financial statement period, a registered public accounting firm that the PCAOB was unable to inspect or investigate completely, because of a position taken by an authority in the foreign jurisdiction, issued an audit report for the registrant; [cite: 268]
-    * (2) [cite: 269] The percentage of shares of the registrant owned by governmental entities in the foreign jurisdiction in which the registrant is incorporated or otherwise organized; [cite: 270]
-    * (3) Whether governmental entities in the applicable foreign jurisdiction with respect to that registered public accounting firm have a controlling financial interest with respect to the registrant; [cite: 271]
-    * (4) [cite: 272] The name of each official of the Chinese Communist Party who is a member of the board of directors of the registrant or the operating entity with respect to the registrant; [cite: 273] and [cite: 274]
-    * (5) Whether the articles of incorporation of the registrant (or equivalent organizing document) contains any charter of the Chinese Communist Party, including the text of any such charter. [cite: 275]
-14 of 19 [cite: 276]
+## Item 9C. Disclosure Regarding Foreign Jurisdictions that Prevent Inspections.
+* (a) A registrant identified by the Commission pursuant to Section 104(i)(2)(A) of the Sarbanes-Oxley Act of 2002 (15 U.S.C. 7214(i)(2)(A)) as having retained, for the preparation of the audit report on its financial statements included in the Form 10-K, a registered public accounting firm that has a branch or office that is located in a foreign jurisdiction and that the Public Company Accounting Oversight Board has determined it is unable to inspect or investigate completely because of a position taken by an authority in the foreign jurisdiction must electronically submit to the Commission on a supplemental basis documentation that establishes that the registrant is not owned or 13 of 19 controlled by a governmental entity in the foreign jurisdiction. The registrant must submit this documentation on or before the due date for this Form. A registrant that is owned or controlled by a foreign governmental entity is not required to submit such documentation.
+* (b) A registrant that is a foreign issuer, as defined in 17 CFR 240.3b-4, identified by the Commission pursuant to Section 104(i) (2)(A) of the Sarbanes-Oxley Act of 2002 (15 U.S.C. 7214(i)(2)(A)) as having retained, for the preparation of the audit report on its financial statements included in the Form 10-K, a registered public accounting firm that has a branch or office that is located in a foreign jurisdiction and that the Public Company Accounting Oversight Board has determined it is unable to inspect or investigate completely because of a position taken by an authority in the foreign jurisdiction, for each year in which the registrant is so identified, must provide the below disclosures. Also, any such identified foreign issuer that uses a variable-interest entity or any similar structure that results in additional foreign entities being consolidated in the financial statements of the registrant is required to provide the below disclosures for itself and its consolidated foreign operating entity or entities. A registrant must disclose:
+    * (1) That, for the immediately preceding annual financial statement period, a registered public accounting firm that the PCAOB was unable to inspect or investigate completely, because of a position taken by an authority in the foreign jurisdiction, issued an audit report for the registrant;
+    * (2) The percentage of shares of the registrant owned by governmental entities in the foreign jurisdiction in which the registrant is incorporated or otherwise organized;
+    * (3) Whether governmental entities in the applicable foreign jurisdiction with respect to that registered public accounting firm have a controlling financial interest with respect to the registrant;
+    * (4) The name of each official of the Chinese Communist Party who is a member of the board of directors of the registrant or the operating entity with respect to the registrant; and
+    * (5) Whether the articles of incorporation of the registrant (or equivalent organizing document) contains any charter of the Chinese Communist Party, including the text of any such charter.
+14 of 19
 
 ---
 
-# PART III [cite: 277]
-[See General Instruction G(3)] [cite: 278]
+# PART III
+[See General Instruction G(3)]
 
-## Item 10. Directors, Executive Officers and Corporate Governance. [cite: 279]
-Furnish the information required by Items 401, 405, 406, 407(c)(3), (d)(4), (d)(5), and 408(b) of Regulation S-K (§ 229.401, § 229.405, § 229.406, § 229.407(c)(3), (d)(4), (d)(5), and § 229.408(b) of this chapter). [cite: 280]
+## Item 10. Directors, Executive Officers and Corporate Governance.
+Furnish the information required by Items 401, 405, 406, 407(c)(3), (d)(4), (d)(5), and 408(b) of Regulation S-K (§ 229.401, § 229.405, § 229.406, § 229.407(c)(3), (d)(4), (d)(5), and § 229.408(b) of this chapter).
 
-## Item 11. Executive Compensation. [cite: 281]
-Furnish the information required by Item 402 of Regulation S-K (§ 229.402 of this chapter) and paragraph (e)(4) and (e)(5) of Item 407 of Regulation S-K (§ 229.407(e)(4) and (e) (5) of this chapter). [cite: 282]
+## Item 11. Executive Compensation.
+Furnish the information required by Item 402 of Regulation S-K (§ 229.402 of this chapter) and paragraph (e)(4) and (e)(5) of Item 407 of Regulation S-K (§ 229.407(e)(4) and (e) (5) of this chapter).
 
-## Item 12. Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters. [cite: 283]
-Furnish the information required by Item 201(d) of Regulation S-K (§ 229.201(d) of this chapter) and Item 403 of Regulation S-K (§ 229.403 of this chapter). [cite: 284]
+## Item 12. Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters.
+Furnish the information required by Item 201(d) of Regulation S-K (§ 229.201(d) of this chapter) and Item 403 of Regulation S-K (§ 229.403 of this chapter).
 
-## Item 13. Certain Relationships and Related Transactions, and Director Independence. [cite: 285]
-Furnish the information required by Item 404 of Regulation S-K (§ 229.404 of this chapter) and Item 407(a) of Regulation S-K (§ 229.407(a) of this chapter). [cite: 286]
+## Item 13. Certain Relationships and Related Transactions, and Director Independence.
+Furnish the information required by Item 404 of Regulation S-K (§ 229.404 of this chapter) and Item 407(a) of Regulation S-K (§ 229.407(a) of this chapter).
 
-## Item 14. Principal Accountant Fees and Services. [cite: 287]
-Furnish the information required by Item 9(e) of Schedule 14A (§ 240.14a-101 of this chapter). [cite: 288]
-* (1) Disclose, under the caption Audit Fees, the aggregate fees billed for each of the last two fiscal years for professional services rendered by the principal accountant for the audit of the registrant's annual financial statements and review of financial statements included in the registrant's Form 10-Q (17 CFR 249.308a) or services that are normally provided by the accountant in connection with statutory and regulatory filings or engagements for those fiscal years. [cite: 289]
-* (2) Disclose, under the caption Audit-Related Fees, the aggregate fees billed in each of the last two fiscal years for assurance and related services by the principal accountant that are reasonably related to the performance of the audit or review of the registrant's financial statements and are not reported under Item 9(e) (1) of Schedule 14A. [cite: 290] Registrants shall describe the nature of the services comprising the fees disclosed under this category. [cite: 291]
-15 of 19 [cite: 292]
-* (3) Disclose, under the caption Tax Fees, the aggregate fees billed in each of the last two fiscal years for professional services rendered by the principal accountant for tax compliance, tax advice, and tax planning. [cite: 293] Registrants shall describe the nature of the services comprising the fees disclosed under this category. [cite: 294]
-* (4) Disclose, under the caption All Other Fees, the aggregate fees billed in each of the last two fiscal years for products and services provided by the principal accountant, other than the services reported in Items $9(e)(1)$ through $9(e)(3)$ of Schedule 14A. [cite: 295] Registrants shall describe the nature of the services comprising the fees disclosed under this category. [cite: 296]
+## Item 14. Principal Accountant Fees and Services.
+Furnish the information required by Item 9(e) of Schedule 14A (§ 240.14a-101 of this chapter).
+* (1) Disclose, under the caption Audit Fees, the aggregate fees billed for each of the last two fiscal years for professional services rendered by the principal accountant for the audit of the registrant's annual financial statements and review of financial statements included in the registrant's Form 10-Q (17 CFR 249.308a) or services that are normally provided by the accountant in connection with statutory and regulatory filings or engagements for those fiscal years.
+* (2) Disclose, under the caption Audit-Related Fees, the aggregate fees billed in each of the last two fiscal years for assurance and related services by the principal accountant that are reasonably related to the performance of the audit or review of the registrant's financial statements and are not reported under Item 9(e) (1) of Schedule 14A. Registrants shall describe the nature of the services comprising the fees disclosed under this category.
+15 of 19
+* (3) Disclose, under the caption Tax Fees, the aggregate fees billed in each of the last two fiscal years for professional services rendered by the principal accountant for tax compliance, tax advice, and tax planning. Registrants shall describe the nature of the services comprising the fees disclosed under this category.
+* (4) Disclose, under the caption All Other Fees, the aggregate fees billed in each of the last two fiscal years for products and services provided by the principal accountant, other than the services reported in Items $9(e)(1)$ through $9(e)(3)$ of Schedule 14A. Registrants shall describe the nature of the services comprising the fees disclosed under this category.
 * (5) 
-    * (i) Disclose the audit committee's pre-approval policies and procedures described in paragraph $(c)(7)(i)$ of Rule 2-01 of Regulation S-X. [cite: 297]
-    * (ii) Disclose the percentage of services described in each of Items $9(e)(2)$ through $9(e)(4)$ of Schedule 14A that were approved by the audit committee pursuant to paragraph $(c)(7)(i)(C)$ of Rule 2-01 of Regulation S-X. [cite: 298]
-* (6) If greater than 50 percent, disclose the percentage of hours expended on the principal accountant's engagement to audit the registrant's financial statements for the most recent fiscal year that were attributed to work performed by persons other than the principal accountant's full-time, permanent employees. [cite: 299]
+    * (i) Disclose the audit committee's pre-approval policies and procedures described in paragraph $(c)(7)(i)$ of Rule 2-01 of Regulation S-X.
+    * (ii) Disclose the percentage of services described in each of Items $9(e)(2)$ through $9(e)(4)$ of Schedule 14A that were approved by the audit committee pursuant to paragraph $(c)(7)(i)(C)$ of Rule 2-01 of Regulation S-X.
+* (6) If greater than 50 percent, disclose the percentage of hours expended on the principal accountant's engagement to audit the registrant's financial statements for the most recent fiscal year that were attributed to work performed by persons other than the principal accountant's full-time, permanent employees.
 
 ---
 
-# PART IV [cite: 300]
+# PART IV
 
-## Item 15. Exhibits and Financial Statement Schedules. [cite: 301]
+## Item 15. Exhibits and Financial Statement Schedules.
 * (a) List the following documents filed as a part of the report:
-    * (1) All financial statements; [cite: 302]
-    * (2) Those financial statement schedules required to be filed by Item 8 of this Form, and by paragraph (b) below. [cite: 303]
-    * (3) Those exhibits required by Item 601 of Regulation S-K (§ 229.601 of this chapter) and by paragraph (b) below. [cite: 304] Identify in the list each management contract or compensatory plan or arrangement required to be filed as an exhibit to this Form pursuant to Item 15(b) of this report. [cite: 305]
-* (b) Registrants shall file, as exhibits to this Form, the exhibits required by Item 601 of Regulation S-K (§ 229.601 of this chapter). [cite: 306]
-16 of 19 [cite: 307]
-* (c) Registrants shall file, as financial statement schedules to this Form, the financial statements required by Regulation S-X (17 CFR 210) which are excluded from the annual report to shareholders by Rule 14a-3(b) including [cite: 308]
-    * (1) separate financial statements of subsidiaries not consolidated and fifty percent or less owned persons; [cite: 309]
-    * (2) separate financial statements of affiliates whose securities are pledged as collateral; and [cite: 310]
-    * (3) schedules. [cite: 311]
+    * (1) All financial statements;
+    * (2) Those financial statement schedules required to be filed by Item 8 of this Form, and by paragraph (b) below.
+    * (3) Those exhibits required by Item 601 of Regulation S-K (§ 229.601 of this chapter) and by paragraph (b) below. Identify in the list each management contract or compensatory plan or arrangement required to be filed as an exhibit to this Form pursuant to Item 15(b) of this report.
+* (b) Registrants shall file, as exhibits to this Form, the exhibits required by Item 601 of Regulation S-K (§ 229.601 of this chapter).
+16 of 19
+* (c) Registrants shall file, as financial statement schedules to this Form, the financial statements required by Regulation S-X (17 CFR 210) which are excluded from the annual report to shareholders by Rule 14a-3(b) including
+    * (1) separate financial statements of subsidiaries not consolidated and fifty percent or less owned persons;
+    * (2) separate financial statements of affiliates whose securities are pledged as collateral; and
+    * (3) schedules.
 
-## Item 16. Form 10-K Summary. [cite: 312]
-Registrants may, at their option, include a summary of information required by this Form, but only if each item in the summary is presented fairly and accurately and includes a hyperlink to the material contained in this Form to which such item relates, including to materials contained in any exhibits filed with this Form. [cite: 313]
-**Instruction:** The summary shall refer only to Form 10-K disclosure that is included in the form at the time it is filed. [cite: 314] A registrant need not update the summary to reflect information required by Part III of Form 10-K that the registrant incorporates by reference from a proxy or information statement filed after the Form 10-K, but must state in the summary that the summary does not include Part III information because that information will be incorporated by reference from a later filed proxy or information statement involving the election of directors. [cite: 315]
-17 of 19 [cite: 316]
-
----
-
-# SIGNATURES [cite: 317]
-[See General Instruction D] [cite: 318]
-
-Pursuant to the requirements of Section 13 or 15(d) of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned, thereunto duly authorized. [cite: 319]
-(Registrant) [cite: 320]
-By (Signature and Title)* [cite: 321]
-Date [cite: 322]
-
-Pursuant to the requirements of the Securities Exchange Act of 1934, this report has been signed below by the following persons on behalf of the registrant and in the capacities and on the dates indicated. [cite: 323]
-By (Signature and Title)* [cite: 324]
-Date [cite: 325]
-By (Signature and Title)* [cite: 326]
-Date [cite: 327]
-
-* Print the name and title of each signing officer under his signature. [cite: 328]
+## Item 16. Form 10-K Summary.
+Registrants may, at their option, include a summary of information required by this Form, but only if each item in the summary is presented fairly and accurately and includes a hyperlink to the material contained in this Form to which such item relates, including to materials contained in any exhibits filed with this Form.
+**Instruction:** The summary shall refer only to Form 10-K disclosure that is included in the form at the time it is filed. A registrant need not update the summary to reflect information required by Part III of Form 10-K that the registrant incorporates by reference from a proxy or information statement filed after the Form 10-K, but must state in the summary that the summary does not include Part III information because that information will be incorporated by reference from a later filed proxy or information statement involving the election of directors.
+17 of 19
 
 ---
 
-**Supplemental Information to be Furnished With Reports Filed Pursuant to Section 15(d) of the Act by Registrants Which Have Not Registered Securities Pursuant to Section 12 of** [cite: 329] **(a)** [cite: 330] **the Act** [cite: 331]
-Except to the extent that the materials enumerated in (1) and/or (2) below are specifically incorporated into this Form by reference, every registrant which files an annual report on this Form pursuant to Section 15(d) of the Act must furnish to the Commission for its information, at the time of filing its report on this Form, four copies of the following: [cite: 332]
-* (1) Any annual report to security holders covering the registrant's last fiscal year; and [cite: 333]
-* (2) Every proxy statement, form of proxy or other proxy soliciting material sent to more than ten of the registrant's security holders with respect to any annual or other meeting of security holders. [cite: 334]
-18 of 19 [cite: 335]
-* (b) [cite: 336]
-* (c) [cite: 337] The foregoing material shall not be deemed to be "filed" with the Commission or otherwise subject to the liabilities of Section 18 of the Act, except to the extent that the registrant specifically incorporates it in its annual report on this Form by reference. [cite: 338] If no such annual report or proxy material has been sent to security holders, a statement to that effect shall be included under this caption. [cite: 339] If such report or proxy material is to be furnished to security holders subsequent to the filing of the annual report of this Form, the registrant shall so state under this caption and shall furnish copies of such material to the Commission when it is sent to security holders. [cite: 340]
-19 of 19 [cite: 341]
-* (1) The General Rules and Regulations under the Act (17 CFR 240) contain certain general requirements which are applicable to reports on any form. [cite: 19] These general requirements should be carefully read and observed in the preparation and filing of reports on this Form. [cite: 20]
-SEC 1673 (02-25) [cite: 21] Potential persons who are to respond to the collection of information contained in this Form are not required to respond unless the Form displays a currently valid OMB control number. [cite: 22] Board of Governors of the Federal Reserve System [cite: 23] OMB Number 7100-0091 [cite: 24] Approval expires August 31, 2026 [cite: 25]
-* (2) Particular attention is directed to Regulation 12B which contains general requirements regarding matters such as the kind and size of paper to be used, the legibility of the report, the information to be given whenever the title of securities is required to be stated, and the filing of the report. [cite: 26] The definitions contained in Rule 12b-2 should be especially noted. See also Regulations 13A and 15D. [cite: 27]
+# SIGNATURES
+[See General Instruction D]
 
-## C. Preparation of Report. [cite: 28]
-* (1) This Form is not to be used as a blank form to be filled in, but only as a guide in the preparation of the report on paper meeting the requirements of Rule 12b-12. [cite: 29] Except as provided in General Instruction G, the answers to the items shall be prepared in the manner specified in Rule 12b-13. [cite: 30]
-* (2) [cite: 31] Except where information is required to be given for the fiscal year or as of a specified date, it shall be given as of the latest practicable date. [cite: 32]
-* (3) Attention is directed to Rule 12b-20, which states: "In addition to the information expressly required to be included in a statement or report, there shall be added such further material information, if any, as may be necessary to make the required statements, in the light of the circumstances under which they are made, not misleading. [cite: 33]
+Pursuant to the requirements of Section 13 or 15(d) of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned, thereunto duly authorized.
+(Registrant)
+By (Signature and Title)*
+Date
 
-## D. Signature and Filing of Report. [cite: 34]
-* (1) Three complete copies of the report, including financial statements, financial statement schedules, exhibits, and all other papers and documents filed as a part thereof, and five additional copies which need not include exhibits, shall be filed with the Commission. [cite: 35] At least one complete copy of the report, including financial statements, financial statement schedules, exhibits, and all other papers and documents filed as a part thereof, shall be filed with each exchange on which any class of securities of the registrant is registered. [cite: 36] At least one complete copy of the report filed with the Commission and one such copy filed with each exchange shall be manually signed. [cite: 37] Copies not manually signed shall bear typed or printed signatures. [cite: 38]
-* (2) 
-    * (a) The report must be signed by the registrant, and on behalf of the registrant by its principal executive officer or officers, its principal financial officer or officers, its controller or principal accounting officer, and by at least the majority of the board of directors or persons performing similar functions. [cite: 39] Where the registrant is a limited partnership, the report must be signed by the majority of the board of directors of any corporate general partner who signs the report. [cite: 40]
-    * (b) The name of each person who signs the report shall be typed or printed beneath his signature. [cite: 41] Any person who occupies more than one of the specified positions shall indicate each capacity in which he signs the report. [cite: 42] Attention is directed to Rule 12b-11 (17 CFR 240.12b-11) concerning manual signatures and signatures pursuant to powers of attorney. [cite: 43]
-2 of 19 [cite: 44]
-* (3) Registrants are requested to indicate in a transmittal letter with the Form 10-K whether the financial statements in the report reflect a change from the preceding year in any accounting principles or practices, or in the method of applying any such principles or practices. [cite: 45]
+Pursuant to the requirements of the Securities Exchange Act of 1934, this report has been signed below by the following persons on behalf of the registrant and in the capacities and on the dates indicated.
+By (Signature and Title)*
+Date
+By (Signature and Title)*
+Date
 
-## E. Disclosure With Respect to Foreign Subsidiaries. [cite: 46]
-Information required by any item or other requirement of this Form with respect to any foreign subsidiary may be omitted to the extent that the required disclosure would be detrimental to the registrant. [cite: 47] However, financial statements and financial statement schedules, otherwise required, shall not be omitted pursuant to this Instruction. [cite: 48] Where information is omitted pursuant to this Instruction, a statement shall be made that such information has been omitted and the names of the subsidiaries involved shall be separately furnished to the Commission. [cite: 49] The Commission may, in its discretion, call for justification that the required disclosure would be detrimental. [cite: 50]
-
-## F. Information as to Employee Stock Purchase, Savings and Similar Plans. [cite: 51]
-Attention is directed to Rule 15d-21 which provides that separate annual and other reports need not be filed pursuant to Section 15(d) of the Act with respect to any employee stock purchase, savings or similar plan if the issuer of the stock or other securities offered to employees pursuant to the plan furnishes to the Commission the information and documents specified in the Rule. [cite: 52]
-
-## G. Information to be Incorporated by Reference. [cite: 53]
-* (1) Attention is directed to Rule 12b-23 which provides for the incorporation by reference of information contained in certain documents in answer or partial answer to any item of a report. [cite: 54]
-* (2) The information called for by Parts I and II of this Form (Items through 9A or any portion thereof) may, at the registrant's option, be incorporated by reference from the registrant's annual report to security holders furnished to the Commission pursuant to Rule 14a-3(b) or Rule 14c-3(a) or from the registrant's annual report to security holders, even if not furnished to the Commission pursuant to Rule 14a-3(b) or Rule 14c-3(a), provided such annual report contains the information required by Rule 14a-3. [cite: 55]
-    * Note 1. In order to fulfill the requirements of Part I of Form 10-K, the incorporated portion of the annual report to security holders must contain the information required by Items 1-3 of Form 10-K; [cite: 56] to the extent applicable. [cite: 57]
-    * Note 2. If any information required by Part I or Part II is incorporated by reference into an electronic format document from the annual report to security holders as provided in General Instruction G, any portion of the annual report to security holders incorporated by reference shall be filed as an exhibit in electronic format, as required by Item 601(b)(13) of Regulation S-K. [cite: 58]
-3 of 19 [cite: 59]
-* (3) The information required by Part III (Items 10, 11, 12, 13 and 14) may be incorporated by reference from the registrant's definitive proxy statement (filed or required to be filed pursuant to Regulation 14A) or definitive information statement (filed or to be filed pursuant to Regulation 14C) which involves the election of directors, if such definitive proxy statement or information statement is filed with the Commission not later than 120 days after the end of the fiscal year covered by the Form 10-K. [cite: 60] However, if such definitive proxy statement or information statement is not filed with the Commission in the 120-day period or is not required to be filed with the Commission by virtue of Rule 3a12-3(b) under the Exchange Act, the Items comprising the Part III information must be filed as part of the Form 10-K, or as an amendment to the Form 10-K, not later than the end of the 120-day period. [cite: 61] It should be noted that the information regarding executive officers required by Item 401 of Regulation S-K (§ 229.401 of this chapter) may be included in Part I of Form 10-K under an appropriate caption. [cite: 62] See the Instruction to Item 401 of Regulation S-K (§ 229.401 of this chapter). [cite: 63]
-* (4) No item numbers of captions of items need be contained in the material incorporated by reference into the report. [cite: 64] When the registrant combines all of the information in Parts I and II of this Form (Items 1 through 9A) by incorporation by reference from the registrant's annual report to security holders and all of the information in Part III of this Form (Items 10 through 14) by incorporating by reference from a definitive proxy statement or information statement involving the election of directors, then, notwithstanding General Instruction $C(1)$, this Form shall consist of the facing or cover page, those sections incorporated from the annual report to security holders, the proxy or information statement, and the information, if any, required [cite: 65] by Part IV of this Form, signatures, and a cross-reference sheet setting forth the item numbers and captions in Parts I, II and III of this Form and the page and/or pages in the referenced materials where the corresponding information appears. [cite: 66]
-
-## H. Integrated Reports to Security Holders. [cite: 67]
-Annual reports to security holders may be combined with the required information of Form 10-K and will be suitable for filing with the Commission if the following conditions are satisfied: [cite: 68]
-* (1) The combined report contains full and complete answers to all items required by Form 10-K. [cite: 69] When responses to a certain item of required disclosure are separated within the combined report, an appropriate cross-reference should be made. [cite: 70] If the information required by Part III of Form 10-K is omitted by virtue of General Instruction G, a definitive proxy or information statement shall be filed. [cite: 71]
-* (2) The cover page and the required signatures are included. [cite: 72] As appropriate, a cross-reference sheet should be filed indicating the location of information required by the items of the Form. [cite: 73]
-* (3) If an electronic filer files any portion of an annual report to security holders in combination with the required information of Form 10-K, as provided in this instruction, only such portions filed in satisfaction of the Form 10-K requirements shall be filed in electronic format. [cite: 74]
-4 of 19 [cite: 75]
-
-## I. [cite: 76] Omission of Information by Certain Wholly-Owned Subsidiaries. [cite: 77]
-If, on the date of the filing of its report on Form 10-K, the registrant meets the conditions specified in paragraph (1) below, then such registrant may furnish the abbreviated narrative disclosure specified in paragraph (2) below. [cite: 78]
-* (1) Conditions for availability of the relief specified in paragraph (2) below. [cite: 79]
-    * (a) All of the registrant's equity securities are owned, either directly or indirectly, by a single person which is a reporting company under the Act and which has filed all the material required to be filed pursuant to section 13, 14, or 15(d) thereof, as applicable, and which is named in conjunction with the registrant's description of its business; [cite: 80]
-    * (b) During the preceding thirty-six calendar months and any subsequent period of days, there has not been any material default in the payment of principal, interest, a sinking or purchase fund installment, or any other material default not cured within thirty days, with respect to any indebtedness of the registrant or its subsidiaries, and there has not been any material default in the payment of rentals under material long-term leases; [cite: 81]
-    * (c) There is prominently set forth, on the cover page of the Form 10-K, a statement that the registrant meets the conditions set forth in General Instruction (I)(1)(a) and (b) of Form 10-K and is therefore filing this Form with the reduced disclosure format; [cite: 82] and [cite: 83]
-    * (d) The registrant is not an asset-backed issuer, as defined in Item 1101 of Regulation AB (17 CFR 229.1101). [cite: 84]
-* (2) Registrants meeting the conditions specified in paragraph (1) above are entitled to the following relief: [cite: 85]
-    * (a) Such registrants may omit the information called for by Item 7, Management's Discussion and Analysis of Financial Condition and Results of Operations provided that the registrant includes in the Form 10-K a management's narrative analysis of the results of operations explaining the reasons for material changes in the amount of revenue and expense items between the most recent fiscal year presented and the fiscal year immediately preceding it. [cite: 86] Explanations of material changes should include, but not be limited to, changes in the various elements which determine revenue and expense levels such as unit sales volume, prices charged and paid, production levels, production cost variances, labor costs and discretionary spending programs. [cite: 87] In addition, the analysis should include an explanation of the effect of any changes in accounting principles and practices or method of application that have a material effect on net income as reported. [cite: 88]
-    * (b) Such registrants may omit the list of subsidiaries exhibit required by Item 601 of Regulation S-K (§ 229.601 of this chapter). [cite: 89]
-    5 of 19 [cite: 90]
-    * (c) Such registrants may omit the information called for by the following otherwise required Items: Item 10, Directors and Executive Officers of the Registrant; [cite: 91] Item 11, Executive Compensation; Item 12, Security Ownership of Certain Beneficial Owners and Management; [cite: 92] and Item 13, Certain Relationships and Related Transactions. [cite: 93]
-    * (d) In response to Item 1, Business, such registrant only need furnish a brief description of the business done by the registrant and its subsidiaries during the most recent fiscal year which will, in the opinion of management, indicate the general nature and scope of the business of the registrant and its subsidiaries, and in response to Item 2, Properties, such registrant only need furnish a brief description of the material properties of the registrant and its subsidiaries to the extent, in the opinion of the management, necessary to an understanding of the business done by the registrant and its [cite: 94] subsidiaries. [cite: 95]
-
-## J. Use of this Form by Asset-Backed Issuers. [cite: 96]
-The following applies to registrants that are asset-backed issuers. Terms used in this General Instruction J. have the same meaning as in Item 1101 of Regulation AB (17 CFR 229.1101). [cite: 97]
-* (1) Items that May be Omitted. Such registrants may omit the information called for by the following otherwise required Items: [cite: 98]
-    * (a) Item 1, Business; [cite: 99]
-    * (b) Item 1A, Risk Factors and Item IC, Cybersecurity; [cite: 100]
-    * (c) Item 2, Properties; [cite: 101]
-    * (d) Item 3, Legal Proceedings; [cite: 102]
-    * (e) [cite: 103] [RESERVED]; [cite: 104]
-    * (f) Item 5, Market for Registrant's Common Equity, Related Stockholder Matters and [cite: 105]
-    * (g) [cite: 106] Issuer Purchases of Equity Securities; [cite: 107] [RESERVED]; [cite: 108]
-    * (h) Item 7, Management's Discussion and Analysis of Financial Condition and [cite: 109] Results of Operations; [cite: 110]
-    * (i) [cite: 111] Item 7A, Quantitative and Qualitative Disclosures About Market Risk; [cite: 112]
-    * (j) Item 8, Financial Statements and Supplementary Data; [cite: 113]
-    * (k) Item 9, Changes in and Disagreements With Accountants on Accounting and Financial Disclosure; [cite: 114]
-    * (1) Item 9A, Controls and Procedures; [cite: 115]
-    * (m) If the issuing entity does not have any executive officers or directors, Item 10, Directors and Executive Officers of the Registrant, Item 11, Executive Compensation, Item 12, Security Ownership of Certain Beneficial Owners and Management, and Item 13, Certain Relationships and Related Transactions; [cite: 116] and [cite: 117]
-    * (n) Item 14, Principal Accountant Fees and Services. [cite: 118]
-6 of 19 [cite: 119]
-
-* (2) Substitute Information to be Included. In addition to the Items that are otherwise required by this Form, the registrant must furnish in the Form 10-K the following information: [cite: 120]
-    * (a) Immediately after the name of the issuing entity on the cover page of the Form 10-K, as separate line items, the exact name of the depositor as specified in its charter and the exact name of the sponsor as specified in its charter. [cite: 121] Include a Central Index Key number for the depositor and the issuing entity, and if available, the sponsor. [cite: 122]
-    * (b) [cite: 123] Item 1112(b) of Regulation AB; [cite: 124]
-    * (c) [cite: 125] Items 1114(b)(2) and 1115(b) of Regulation AB; [cite: 126]
-    * (d) [cite: 127] Item 1117 of Regulation AB; [cite: 128]
-    * (e) [cite: 129] Item 1119 of Regulation AB; [cite: 130]
-    * (f) [cite: 131] Item 1122 of Regulation AB; and [cite: 132]
-    * (g) Item 1123 of Regulation AB. [cite: 133]
-* (3) Signatures. [cite: 134] The Form 10-K must be signed either: [cite: 135]
-    * (a) On behalf of the depositor by the senior officer in charge of securitization of the depositor; or [cite: 136]
-    * (b) On behalf of the issuing entity by the senior officer in charge of the servicing function of the servicer. [cite: 137] If multiple servicers are involved in servicing the pool assets, the senior officer in charge of the servicing function of the master servicer (or entity performing the equivalent function) must sign if a representative of the servicer is to sign the report on behalf of the issuing entity. [cite: 138]
-7 of 19 [cite: 139]
+* Print the name and title of each signing officer under his signature.
 
 ---
 
-(Mark One) [cite: 140]
-UNITED STATES [cite: 141]
-SECURITIES AND EXCHANGE COMMISSION [cite: 142]
-Washington, D.C. 20549 [cite: 143]
-
-# FORM 10-K [cite: 144]
-
-[ ] ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 [cite: 145]
-For the fiscal year ended [cite: 146]
-or [cite: 147]
-[ ] TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 [cite: 148]
-For the transition period from [cite: 149] Commission file number [cite: 150] to
-(I.R.S. Employer Identification No.) [cite: 152]
-(Zip Code) [cite: 153]
-(Exact name of registrant as specified in its charter) [cite: 154]
-State or other jurisdiction of [cite: 155] incorporation or organization [cite: 156]
-(Address of principal executive offices) [cite: 157]
-Registrant's telephone number, including area code [cite: 158]
-
-Securities registered pursuant to Section 12(b) of the Act: [cite: 159]
-Title of each class [cite: 160] Trading Symbol(s) [cite: 161] Name of each exchange on which registered [cite: 162]
-8 of 19 [cite: 163]
-
-Securities registered pursuant to section 12(g) of the Act: [cite: 164]
-(Title of class) [cite: 165]
-(Title of class) [cite: 166]
-
-Indicate by check mark if the registrant is a well-known seasoned issuer, as defined in Rule 405 of the Securities Act. [cite: 167]
-[ ] [cite: 168] Yes [cite: 169] No [cite: 170] [ ] [cite: 171]
-
-Indicate by check mark if the registrant is not required to file reports pursuant to Section 13 or Section 15(d) of the Act. [cite: 172]
-[ ] [cite: 173] Yes [cite: 174] [ ] No [cite: 175]
-Note - Checking the box above will not relieve any registrant required to file reports pursuant to Section 13 or 15(d) of the Exchange Act from their obligations under those Sections. [cite: 176]
-
-Indicate by check mark whether the registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding 12 months (or for such shorter period that the registrant was required to file such reports), and (2) has been subject to such filing requirements for the past 90 days. [cite: 177]
-[ ] [cite: 178] [ ] [cite: 179] Yes [cite: 180] No [cite: 181]
-
-Indicate by check mark whether the registrant has submitted electronically every Interactive Data File required to be submitted pursuant to Rule 405 of Regulation S-T (§ 232.405 of this chapter) during the preceding 12 months (or for such shorter period that the registrant was required to submit such files). [cite: 182]
-[ ] [ ] Yes No [cite: 183]
-
-Indicate by check mark whether the registrant is a large accelerated filer, an accelerated filer, a non-accelerated filer, a smaller reporting company, or an emerging growth company. [cite: 184] See the definitions of "large accelerated filer," "accelerated filer," "smaller reporting company" and "emerging growth company" in Rule 12b-2 of the Exchange Act. [cite: 185]
-[ ] Large accelerated filer [cite: 186]
-[ ] Accelerated filer [cite: 187]
-Non-accelerated filer [ ] [cite: 188]
-[ ] [cite: 189]
-[ ] Smaller reporting company
-[ ] Emerging growth company [cite: 190]
-If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. [cite: 191]
-9 of 19 [cite: 192]
-
-Indicate by check mark whether the registrant has filed a report on and attestation to its management's assessment of the effectiveness of its internal control over financial reporting under Section 404(b) of the Sarbanes-Oxley Act (15 U.S.C. 7262(b)) by the registered public accounting firm that prepared or issued its audit report. [cite: 193]
-
-If securities are registered pursuant to Section 12(b) of the Act, indicate by check mark whether the financial statements of the registrant included in the filing reflect the correction of an error to previously issued financial statements. [cite: 194]
-
-Indicate by check mark whether any of those error corrections are restatements that required a recovery analysis of incentive-based compensation received by any of the registrant's executive officers during the relevant recovery period pursuant to 240.10D-1(b). [cite: 195]
-
-Indicate by check mark whether the registrant is a shell company (as defined in Rule 12b-2 of the Act). Yes [cite: 196] No [cite: 197]
-
-State the aggregate market value of the voting and non-voting common equity held by non-affiliates computed by reference to the price at which the common equity was last sold, or the average bid and asked price of such common equity, as of the last business day of the registrant's most recently completed second fiscal quarter. [cite: 198]
-Note. If a determination as to whether a particular person or entity is an affiliate cannot be made without involving unreasonable effort and expense, the aggregate market value of the common stock held by non-affiliates may be calculated on the basis of assumptions reasonable under the circumstances, provided that the assumptions are set forth in this Form. [cite: 199]
-
-APPLICABLE ONLY TO REGISTRANTS INVOLVED IN BANKRUPTCY PROCEEDINGS DURING THE PRECEDING FIVE YEARS: [cite: 200]
-Indicate by check mark whether the registrant has filed all documents and reports required to be filed by Section 12, 13 or 15(d) of the Securities Exchange Act of 1934 subsequent to the distribution of securities under a plan confirmed by a court. [cite: 201] Yes [cite: 202]
-(APPLICABLE ONLY TO CORPORATE REGISTRANTS) [cite: 203] [ ] [cite: 204]
-Indicate the number of shares outstanding of each of the registrant's classes of common stock, as of the latest practicable date. [cite: 205]
-
-DOCUMENTS INCORPORATED BY REFERENCE [cite: 206] No [cite: 207]
-List hereunder the following documents if incorporated by reference and the Part of the Form 10-K (e.g., Part I, Part II, etc.) into which the document is incorporated: (1) Any annual report to security holders; [cite: 208] (2) Any proxy or information statement; and (3) Any prospectus filed pursuant to Rule 424(b) or (c) under the Securities Act of 1933. The listed documents should be clearly described for identification purposes (e.g., annual report to security holders for fiscal year ended December 24, 1980). [cite: 209]
-10 of 19 [cite: 210]
-
----
-
-# PART I [cite: 212]
-[See General Instruction G(2)] [cite: 213]
-
-## Item 1. Business. [cite: 211]
-Furnish the information required by Item 101 of Regulation S-K (§ 229.101 of this chapter) except that the discussion of the development of the registrant's business need only include developments since the beginning of the fiscal year for which this report is filed. [cite: 214]
-
-## Item 1A. Risk Factors. [cite: 215]
-Set forth, under the caption "Risk Factors," where appropriate, the risk factors described in Item 105 of Regulation S-K (§ 229.105 of this chapter) applicable to the registrant. [cite: 216] Provide any discussion of risk factors in plain English in accordance with Rule 421(d) of the Securities Act of 1933 (§ 230.421(d) of this chapter). [cite: 217] Smaller reporting companies are not required to provide the information required by this item. [cite: 218]
-
-## Item 1B. Unresolved Staff Comments. [cite: 219]
-If the registrant is an accelerated filer or a large accelerated filer, as defined in Rule 12b-2 of the Exchange Act (§ 240.12b-2 of this chapter), or is a well-known seasoned issuer as defined in Rule 405 of the Securities Act (§ 230.405 of this chapter) and has received written comments from the Commission staff regarding its periodic or current reports under the Act not less than 180 days before the end of its fiscal year to which the annual report relates, and such comments remain unresolved, disclose the substance of any such unresolved comments that the registrant believes are [cite: 220] material. Such disclosure may provide other information including the position of the registrant with respect to any such comment. [cite: 221]
-
-## Item 1C. Cybersecurity. [cite: 222]
-Furnish the information required by Item 106 of Regulation S-K (§ 229.106 of this chapter).
-
-## Item 2. Properties. [cite: 223]
-Furnish the information required by Item 102 of Regulation S-K (§ 229.102 of this chapter).
-
-## Item 3. Legal Proceedings. [cite: 224]
-* (a) Furnish the information required by Item 103 of Regulation S-K (§ 229.103 of this chapter). [cite: 225]
-* (b) As to any proceeding that was terminated during the fourth quarter of the fiscal year covered by this report, furnish information similar to that required by Item 103 of Regulation S-K (§ 229.103 of this chapter), including the date of termination and a description of the disposition thereof with respect to the registrant and its subsidiaries. [cite: 226]
-11 of 19 [cite: 227]
-
-## Item 4. Mine Safety Disclosures. [cite: 228]
-If applicable, provide a statement that the information concerning mine safety violations or other regulatory matters required by Section 1503(a) of the Dodd-Frank Wall Street Reform and Consumer Protection Act and Item 104 of Regulation S-K (17 CFR 229.104) is included in exhibit 95 to the annual report. [cite: 229]
-
----
-
-# PART II [cite: 230]
-[See General Instruction G(2)] [cite: 231]
-
-## Item 5. Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities. [cite: 232]
-* (a) Furnish the information required by Item 201 of Regulation S-K (17 CFR 229.201) and Item 701 of Regulation S-K (17 CFR 229.701) as to all equity securities of the registrant sold by the registrant during the period covered by the report that were not registered under the Securities Act. [cite: 233] If the Item 701 information previously has been included in a Quarterly Report on Form 10-Q or in a Current Report on Form 8-K (17 CFR 249.308), it need not be furnished. [cite: 234]
-* (b) If required pursuant to Rule 463 (17 CFR 230.463) of the Securities Act of 1933, furnish the information required by Item 701(f) of Regulation S-K (§ 229.701(f) of this chapter). [cite: 235]
-* (c) Furnish the information required by Item 703 of Regulation S-K (§ 229.703 of this chapter) for any repurchase made in a month within the fourth quarter of the fiscal year covered by the report. [cite: 236] Provide disclosures covering repurchases made on a monthly basis. For example, if the fourth quarter began on January 16 and ended on April 15, the chart would show repurchases for the months from January 16 through February 15, February 16 through March 15, and March 16 through April 15. [cite: 237]
-
-## Item 6. [Reserved] [cite: 238]
-
-## Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations. [cite: 239]
-Furnish the information required by Item 303 of Regulation S-K (§ 229.303 of this chapter).
-
-## Item 7A. Quantitative and Qualitative Disclosures About Market Risk. [cite: 240] [cite: 241]
-Furnish the information required by Item 305 of Regulation S-K (§ 229.305 of this chapter). [cite: 242]
-
-## Item 8. Financial Statements and Supplementary Data. [cite: 243]
-* (a) File financial statements meeting the requirements of Regulation S-X (§ 210 of this chapter), except § 210.3-05, § 210.3-14, § 210.6-11, § 210.8-04, § 210.8-05, § 210.8-06 and Article 11 thereof, and the supplementary financial information required by Item [cite: 244] 12 of 19 [cite: 245] 302 of Regulation S-K (§ 229.302 of this chapter). Financial statements of the registrant and its subsidiaries consolidated (as required by Rule 14a-3(b)) must be filed under this item. [cite: 246] Other financial statements and schedules required under Regulation S-X may be filed as "Financial Statement Schedules" pursuant to Item 15, Exhibits, Financial Statement Schedules, and Reports on Form 8-K, of this form. [cite: 247]
-* (b) A smaller reporting company may provide the information required by Article 8 of Regulation S-X in lieu of any financial statements required by Item 8 of this Form. [cite: 248]
-
-## Item 9. Changes in and Disagreements With Accountants on Accounting and Financial Disclosure. [cite: 249]
-Furnish the information required by Item 304(b) of Regulation S-K (§ 229.304(b) of this chapter). [cite: 250]
-
-## Item 9A. Controls and Procedures.
-Furnish the information required by Item 307 and 308 of Regulation S-K (§229.307 and §229.308 of this chapter). [cite: 251]
-
-## Item 9B. Other Information. [cite: 252]
-* (a) The registrant must disclose under this item any information required to be disclosed in a report on Form 8-K during the fourth quarter of the year covered by this Form 10-K, but not reported, whether or not otherwise required by this Form 10-K. [cite: 253] If disclosure of such information is made under this item, it need not be repeated in a report on Form 8-K which would otherwise be required to be filed with respect to such information or in a subsequent report on Form 10-K. [cite: 254]
-* (b) Furnish the information required by Item 408(a) of Regulation S-K (§ 229.408(a) of this chapter). [cite: 255]
-**Instruction.** [cite: 256] With respect to a report on this Form regarding a class of asset-backed securities, the relevant period where disclosure is required is the period since the last required distribution report on Form 10-D (17 CFR 249.312)." [cite: 257]
-
-## Item 9C. Disclosure Regarding Foreign Jurisdictions that Prevent Inspections. [cite: 258]
-* (a) A registrant identified by the Commission pursuant to Section 104(i)(2)(A) of the Sarbanes-Oxley Act of 2002 (15 U.S.C. 7214(i)(2)(A)) as having retained, for the preparation of the audit report on its financial statements included in the Form 10-K, a registered public accounting firm that has a branch or office that is located in a foreign jurisdiction and that the Public Company Accounting Oversight Board has determined it is unable to inspect or investigate completely because of a position taken by an authority in the foreign jurisdiction must electronically submit to the Commission on a supplemental basis documentation that establishes [cite: 259] that the registrant is not owned or [cite: 260] 13 of 19 [cite: 261] controlled by a governmental entity in the foreign jurisdiction. The registrant must submit this documentation on or before the due date for this Form. [cite: 262] A registrant that is owned or controlled by a foreign governmental entity is not required to submit such documentation. [cite: 263]
-* (b) A registrant that is a foreign issuer, as defined in 17 CFR 240.3b-4, identified by the Commission pursuant to Section 104(i) (2)(A) of the Sarbanes-Oxley Act of 2002 (15 U.S.C. 7214(i)(2)(A)) as having retained, for the preparation of the audit report on its financial statements included in the Form 10-K, a registered public accounting firm that has a branch or office that is located in a foreign jurisdiction and that the Public Company Accounting Oversight Board has determined it is unable to inspect or investigate completely because of a position taken by an authority in the foreign jurisdiction, for [cite: 264] each year in which the registrant is so identified, must provide the below disclosures. [cite: 265] Also, any such identified foreign issuer that uses a variable-interest entity or any similar structure that results in additional foreign entities being consolidated in the financial statements of the registrant is required to provide the below disclosures for itself and its consolidated foreign operating entity or entities. [cite: 266] A registrant must disclose: [cite: 267]
-    * (1) That, for the immediately preceding annual financial statement period, a registered public accounting firm that the PCAOB was unable to inspect or investigate completely, because of a position taken by an authority in the foreign jurisdiction, issued an audit report for the registrant; [cite: 268]
-    * (2) [cite: 269] The percentage of shares of the registrant owned by governmental entities in the foreign jurisdiction in which the registrant is incorporated or otherwise organized; [cite: 270]
-    * (3) Whether governmental entities in the applicable foreign jurisdiction with respect to that registered public accounting firm have a controlling financial interest with respect to the registrant; [cite: 271]
-    * (4) [cite: 272] The name of each official of the Chinese Communist Party who is a member of the board of directors of the registrant or the operating entity with respect to the registrant; [cite: 273] and [cite: 274]
-    * (5) Whether the articles of incorporation of the registrant (or equivalent organizing document) contains any charter of the Chinese Communist Party, including the text of any such charter. [cite: 275]
-14 of 19 [cite: 276]
-
----
-
-# PART III [cite: 277]
-[See General Instruction G(3)] [cite: 278]
-
-## Item 10. Directors, Executive Officers and Corporate Governance. [cite: 279]
-Furnish the information required by Items 401, 405, 406, 407(c)(3), (d)(4), (d)(5), and 408(b) of Regulation S-K (§ 229.401, § 229.405, § 229.406, § 229.407(c)(3), (d)(4), (d)(5), and § 229.408(b) of this chapter). [cite: 280]
-
-## Item 11. Executive Compensation. [cite: 281]
-Furnish the information required by Item 402 of Regulation S-K (§ 229.402 of this chapter) and paragraph (e)(4) and (e)(5) of Item 407 of Regulation S-K (§ 229.407(e)(4) and (e) (5) of this chapter). [cite: 282]
-
-## Item 12. Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters. [cite: 283]
-Furnish the information required by Item 201(d) of Regulation S-K (§ 229.201(d) of this chapter) and Item 403 of Regulation S-K (§ 229.403 of this chapter). [cite: 284]
-
-## Item 13. Certain Relationships and Related Transactions, and Director Independence. [cite: 285]
-Furnish the information required by Item 404 of Regulation S-K (§ 229.404 of this chapter) and Item 407(a) of Regulation S-K (§ 229.407(a) of this chapter). [cite: 286]
-
-## Item 14. Principal Accountant Fees and Services. [cite: 287]
-Furnish the information required by Item 9(e) of Schedule 14A (§ 240.14a-101 of this chapter). [cite: 288]
-* (1) Disclose, under the caption Audit Fees, the aggregate fees billed for each of the last two fiscal years for professional services rendered by the principal accountant for the audit of the registrant's annual financial statements and review of financial statements included in the registrant's Form 10-Q (17 CFR 249.308a) or services that are normally provided by the accountant in connection with statutory and regulatory filings or engagements for those fiscal years. [cite: 289]
-* (2) Disclose, under the caption Audit-Related Fees, the aggregate fees billed in each of the last two fiscal years for assurance and related services by the principal accountant that are reasonably related to the performance of the audit or review of the registrant's financial statements and are not reported under Item 9(e) (1) of Schedule 14A. [cite: 290] Registrants shall describe the nature of the services comprising the fees disclosed under this category. [cite: 291]
-15 of 19 [cite: 292]
-* (3) Disclose, under the caption Tax Fees, the aggregate fees billed in each of the last two fiscal years for professional services rendered by the principal accountant for tax compliance, tax advice, and tax planning. [cite: 293] Registrants shall describe the nature of the services comprising the fees disclosed under this category. [cite: 294]
-* (4) Disclose, under the caption All Other Fees, the aggregate fees billed in each of the last two fiscal years for products and services provided by the principal accountant, other than the services reported in Items $9(e)(1)$ through $9(e)(3)$ of Schedule 14A. [cite: 295] Registrants shall describe the nature of the services comprising the fees disclosed under this category. [cite: 296]
-* (5) 
-    * (i) Disclose the audit committee's pre-approval policies and procedures described in paragraph $(c)(7)(i)$ of Rule 2-01 of Regulation S-X. [cite: 297]
-    * (ii) Disclose the percentage of services described in each of Items $9(e)(2)$ through $9(e)(4)$ of Schedule 14A that were approved by the audit committee pursuant to paragraph $(c)(7)(i)(C)$ of Rule 2-01 of Regulation S-X. [cite: 298]
-* (6) If greater than 50 percent, disclose the percentage of hours expended on the principal accountant's engagement to audit the registrant's financial statements for the most recent fiscal year that were attributed to work performed by persons other than the principal accountant's full-time, permanent employees. [cite: 299]
-
----
-
-# PART IV [cite: 300]
-
-## Item 15. Exhibits and Financial Statement Schedules. [cite: 301]
-* (a) List the following documents filed as a part of the report:
-    * (1) All financial statements; [cite: 302]
-    * (2) Those financial statement schedules required to be filed by Item 8 of this Form, and by paragraph (b) below. [cite: 303]
-    * (3) Those exhibits required by Item 601 of Regulation S-K (§ 229.601 of this chapter) and by paragraph (b) below. [cite: 304] Identify in the list each management contract or compensatory plan or arrangement required to be filed as an exhibit to this Form pursuant to Item 15(b) of this report. [cite: 305]
-* (b) Registrants shall file, as exhibits to this Form, the exhibits required by Item 601 of Regulation S-K (§ 229.601 of this chapter). [cite: 306]
-16 of 19 [cite: 307]
-* (c) Registrants shall file, as financial statement schedules to this Form, the financial statements required by Regulation S-X (17 CFR 210) which are excluded from the annual report to shareholders by Rule 14a-3(b) including [cite: 308]
-    * (1) separate financial statements of subsidiaries not consolidated and fifty percent or less owned persons; [cite: 309]
-    * (2) separate financial statements of affiliates whose securities are pledged as collateral; and [cite: 310]
-    * (3) schedules. [cite: 311]
-
-## Item 16. Form 10-K Summary. [cite: 312]
-Registrants may, at their option, include a summary of information required by this Form, but only if each item in the summary is presented fairly and accurately and includes a hyperlink to the material contained in this Form to which such item relates, including to materials contained in any exhibits filed with this Form. [cite: 313]
-**Instruction:** The summary shall refer only to Form 10-K disclosure that is included in the form at the time it is filed. [cite: 314] A registrant need not update the summary to reflect information required by Part III of Form 10-K that the registrant incorporates by reference from a proxy or information statement filed after the Form 10-K, but must state in the summary that the summary does not include Part III information because that information will be incorporated by reference from a later filed proxy or information statement involving the election of directors. [cite: 315]
-17 of 19 [cite: 316]
-
----
-
-# SIGNATURES [cite: 317]
-[See General Instruction D] [cite: 318]
-
-Pursuant to the requirements of Section 13 or 15(d) of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned, thereunto duly authorized. [cite: 319]
-(Registrant) [cite: 320]
-By (Signature and Title)* [cite: 321]
-Date [cite: 322]
-
-Pursuant to the requirements of the Securities Exchange Act of 1934, this report has been signed below by the following persons on behalf of the registrant and in the capacities and on the dates indicated. [cite: 323]
-By (Signature and Title)* [cite: 324]
-Date [cite: 325]
-By (Signature and Title)* [cite: 326]
-Date [cite: 327]
-
-* Print the name and title of each signing officer under his signature. [cite: 328]
-
----
-
-**Supplemental Information to be Furnished With Reports Filed Pursuant to Section 15(d) of the Act by Registrants Which Have Not Registered Securities Pursuant to Section 12 of** [cite: 329] **(a)** [cite: 330] **the Act** [cite: 331]
-Except to the extent that the materials enumerated in (1) and/or (2) below are specifically incorporated into this Form by reference, every registrant which files an annual report on this Form pursuant to Section 15(d) of the Act must furnish to the Commission for its information, at the time of filing its report on this Form, four copies of the following: [cite: 332]
-* (1) Any annual report to security holders covering the registrant's last fiscal year; and [cite: 333]
-* (2) Every proxy statement, form of proxy or other proxy soliciting material sent to more than ten of the registrant's security holders with respect to any annual or other meeting of security holders. [cite: 334]
-18 of 19 [cite: 335]
-* (b) [cite: 336]
-* (c) [cite: 337] The foregoing material shall not be deemed to be "filed" with the Commission or otherwise subject to the liabilities of Section 18 of the Act, except to the extent that the registrant specifically incorporates it in its annual report on this Form by reference. [cite: 338] If no such annual report or proxy material has been sent to security holders, a statement to that effect shall be included under this caption. [cite: 339] If such report or proxy material is to be furnished to security holders subsequent to the filing of the annual report of this Form, the registrant shall so state under this caption and shall furnish copies of such material to the Commission when it is sent to security holders. [cite: 340]
-19 of 19 [cite: 341]
+**Supplemental Information to be Furnished With Reports Filed Pursuant to Section 15(d) of the Act by Registrants Which Have Not Registered Securities Pursuant to Section 12 of** **(a)** **the Act**
+Except to the extent that the materials enumerated in (1) and/or (2) below are specifically incorporated into this Form by reference, every registrant which files an annual report on this Form pursuant to Section 15(d) of the Act must furnish to the Commission for its information, at the time of filing its report on this Form, four copies of the following:
+* (1) Any annual report to security holders covering the registrant's last fiscal year; and
+* (2) Every proxy statement, form of proxy or other proxy soliciting material sent to more than ten of the registrant's security holders with respect to any annual or other meeting of security holders.
+18 of 19
+* (b)
+* (c) The foregoing material shall not be deemed to be "filed" with the Commission or otherwise subject to the liabilities of Section 18 of the Act, except to the extent that the registrant specifically incorporates it in its annual report on this Form by reference. If no such annual report or proxy material has been sent to security holders, a statement to that effect shall be included under this caption. If such report or proxy material is to be furnished to security holders subsequent to the filing of the annual report of this Form, the registrant shall so state under this caption and shall furnish copies of such material to the Commission when it is sent to security holders.
+19 of 19
