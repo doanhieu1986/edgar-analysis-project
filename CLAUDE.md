@@ -103,13 +103,14 @@ edgar-analysis-project/
 ### Output Format (Parquet)
 **Column order** (DO NOT change):
 1. year
-2. filename
-3. cik
-4. filed_date
-5. form_type
-6. conformed_period
-7. item_1a
-8. item_7
+2. quarter
+3. filename
+4. cik
+5. filed_date
+6. form_type
+7. conformed_period
+8. item_1a
+9. item_7
 
 **Naming**: `{year}_data.parquet` (e.g., 2024_data.parquet)
 

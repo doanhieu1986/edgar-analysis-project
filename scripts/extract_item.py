@@ -157,13 +157,22 @@ def process_files_to_parquet(file_or_dir: Path) -> None:
             # Extract year from filed_date (YYYYMMDD -> YYYY)
             year = filed_date[:4]
 
+            # Extract quarter from file path (e.g., QTR1, QTR2, QTR3, QTR4)
+            quarter = None
+            parts = file_path.parts
+            for part in parts:
+                if part.startswith("QTR") and len(part) == 4 and part[3].isdigit():
+                    quarter = part
+                    break
+
             # Extract items
             item_1a = extract_item(text, "1A")
             item_7 = extract_item(text, "7")
 
-            # Create data row with year at the beginning
+            # Create data row with year and quarter at the beginning
             row = {
                 "year": year,
+                "quarter": quarter,
                 "filename": file_path.name,
                 "cik": metadata.get("cik"),
                 "filed_date": metadata.get("filed_date"),

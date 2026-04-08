@@ -406,6 +406,7 @@ python scripts/run_test.py
 | Cột | Kiểu | Ví dụ | Mô tả |
 |-----|------|--------|-------|
 | `year` | str | "2024" | Năm từ filed_date |
+| `quarter` | str | "QTR1", "QTR2" | Quý từ folder path (.../QTR1/...) - null nếu không trong subfolder QTR |
 | `filename` | str | "20240102_10-K_edgar_data_90168_*.txt" | Tên file gốc |
 | `cik` | str | "0000090168" | CENTRAL INDEX KEY |
 | `filed_date` | str | "20240102" | FILED AS OF DATE (YYYYMMDD) |

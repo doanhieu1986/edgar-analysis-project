@@ -47,13 +47,14 @@ python run_test.py
 
 **Cột (theo thứ tự)**:
 1. `year` - Năm từ filed_date (ví dụ: 2024)
-2. `filename` - Tên file gốc
-3. `cik` - CENTRAL INDEX KEY
-4. `filed_date` - FILED AS OF DATE (YYYYMMDD)
-5. `form_type` - CONFORMED SUBMISSION TYPE
-6. `conformed_period` - CONFORMED PERIOD OF REPORT (YYYYMMDD)
-7. `item_1a` - Nội dung Item 1A (Risk Factors) - full text
-8. `item_7` - Nội dung Item 7 (MD&A) - full text
+2. `quarter` - Quý từ folder path (ví dụ: QTR1, QTR2, QTR3, QTR4) - hoặc null nếu không trong subfolder
+3. `filename` - Tên file gốc
+4. `cik` - CENTRAL INDEX KEY
+5. `filed_date` - FILED AS OF DATE (YYYYMMDD)
+6. `form_type` - CONFORMED SUBMISSION TYPE
+7. `conformed_period` - CONFORMED PERIOD OF REPORT (YYYYMMDD)
+8. `item_1a` - Nội dung Item 1A (Risk Factors) - full text
+9. `item_7` - Nội dung Item 7 (MD&A) - full text
 
 **File output**:
 - Lưu trong thư mục `outputs/`
