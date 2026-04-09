@@ -31,7 +31,7 @@ Script `extract_item.py` giúp chiết xuất nội dung của các mục (Item)
 ```python
 def build_item_pattern(item_id: str) -> re.Pattern:
 ```
-- **Input**: ID của Item (e.g., "1A", "7", "9A")
+- **Input**: ID của Item (e.g., "1A", "1B", "9A")
 - **Xử lý**:
   1. Normalize: chuyển đổi sang uppercase (`1a` → `1A`)
   2. Loại bỏ khoảng trắng
@@ -256,8 +256,7 @@ def process_files_to_parquet(file_or_dir: Path) -> None:
   3. **Loop qua mỗi file**:
      - Đọc nội dung file
      - Gọi `extract_metadata()` → lấy `filed_date` và tính `year`
-     - Gọi `extract_item()` → chiết xuất Item 1A
-     - Gọi `extract_item()` → chiết xuất Item 7
+     - Gọi `extract_item()` → chiết xuất Item 1A (Risk Factors)
      - Tạo dict row với các dữ liệu trên
      - Thêm row vào bucket `data_by_year[year]`
   4. **Lưu Parquet files**:
@@ -273,8 +272,8 @@ Input files:
 - 20230630_10-K_edgar_data_12345_0000012345-23-000099.txt (filed_date: 20230630 → year: 2023)
 
 Output:
-- outputs/2024_data.parquet (1 record)
-- outputs/2023_data.parquet (1 record)
+- outputs/2024_data.parquet (1 record with Item 1A content)
+- outputs/2023_data.parquet (1 record with Item 1A content)
 ```
 
 ---
@@ -428,19 +427,18 @@ Input: extract_item.py /path/to/10k/files --parquet
    b. extract_metadata(text) → {cik, filed_date, form_type, ...}
    c. Extract year from filed_date: "20240102"[:4] = "2024"
    d. extract_item(text, "1A") → item_1a content
-   e. extract_item(text, "7") → item_7 content
-   f. Build row:
+   e. Build row:
       {
         "year": "2024",
+        "quarter": "QTR1",
         "filename": "20240102_10-K_edgar_data_90168_*.txt",
         "cik": "0000090168",
         "filed_date": "20240102",
         "form_type": "10-K",
         "conformed_period": "20230930",
-        "item_1a": "Item 1A. Risk Factors ...",
-        "item_7": "Item 7. MD&A ..."
+        "item_1a": "Item 1A. Risk Factors ..."
       }
-   g. Add to data_by_year["2024"]
+   f. Add to data_by_year["2024"]
 4. Save parquet:
    - data_by_year["2024"] → DataFrame → outputs/2024_data.parquet
    - data_by_year["2023"] → DataFrame → outputs/2023_data.parquet
@@ -549,7 +547,6 @@ python scripts/run_test.py
 | `form_type` | str | "10-K" | CONFORMED SUBMISSION TYPE |
 | `conformed_period` | str | "20230930" | CONFORMED PERIOD OF REPORT (YYYYMMDD) |
 | `item_1a` | str | "Item 1A. Risk Factors..." | Nội dung Item 1A (full text) |
-| `item_7` | str | "Item 7. MD&A..." | Nội dung Item 7 (full text) |
 
 ### Tên file output
 - **Format**: `{year}_data.parquet`
@@ -585,8 +582,6 @@ python scripts/run_test.py
 - **Files Processed**: 6,878
 - **Success Rate**: 100% (no crashes/failures)
 - **Item 1A Found**: 6,762/6,878 (98.3%)
-- **Item 7 Found**: 6,802/6,878 (98.9%)
-- **Both Items**: 6,715/6,878 (97.6%)
 
 ### Multi-step Validation Effectiveness
 - **ToC Handling**: Successfully identifies and removes ToC sections

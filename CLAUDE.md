@@ -33,7 +33,7 @@ edgar-analysis-project/
 ### Default Mode (Run without arguments)
 - Automatically process all files from `../.sources_data` folder
 - Extract metadata: CIK, filed_date, form_type, conformed_period
-- Extract Items 1A and 7 content
+- Extract Item 1A content (Risk Factors)
 - Save to Parquet format, organized by year (from filed_date)
 - Command: `python scripts/extract_item.py`
 
@@ -46,7 +46,7 @@ edgar-analysis-project/
 ### Parquet Mode (Batch Processing)
 - Process single file or directory of 10-K files
 - Extract metadata: CIK, filed_date, form_type, conformed_period
-- Extract Items 1A and 7 content
+- Extract Item 1A content (Risk Factors)
 - Save to Parquet format, organized by year (from filed_date)
 - Command: `python scripts/extract_item.py <file_or_dir> --parquet`
 
@@ -149,7 +149,6 @@ edgar-analysis-project/
 6. form_type
 7. conformed_period
 8. item_1a
-9. item_7
 
 **Naming**: `{year}_data.parquet` (e.g., 2024_data.parquet)
 
@@ -162,10 +161,9 @@ Input File (10-K text)
     ↓
 extract_metadata() → {cik, filed_date, year, ...}
     ↓
-extract_item(text, "1A") → Item 1A content
-extract_item(text, "7") → Item 7 content
+extract_item(text, "1A") → Item 1A content (Risk Factors)
     ↓
-DataFrame row: {year, filename, cik, ..., item_1a, item_7}
+DataFrame row: {year, filename, cik, ..., item_1a}
     ↓
 process_files_to_parquet() → Group by year
     ↓
@@ -200,12 +198,11 @@ python scripts/run_test.py
 
 ### Verified Behavior (2026-04-09 Batch Test)
 - ✅ Item 1A: 98.3% extraction (6,762/6,878 files)
-- ✅ Item 7: 98.9% extraction (6,802/6,878 files)
-- ✅ Both Items: 97.6% (6,715/6,878 files)
 - ✅ Processing Time: ~4.5 minutes for 6,878 files
-- ✅ Output: 108 MB parquet file with full metadata & content
+- ✅ Output: Parquet files with metadata & Item 1A content
 - ✅ Year extracted: Correctly from filed_date (2024 for all 6,878 files)
 - ✅ No processing failures: 100% success rate
+- ✅ Multi-step validation: Handles ToC, line-wrapped items, and references correctly
 
 ---
 
@@ -314,10 +311,9 @@ When updating code:
 ### Validation & Test Results (2026-04-09)
 - **Batch Processing**: 6,878 files processed in ~4.5 minutes
 - **Item 1A Extraction**: 6,762/6,878 (98.3%)
-- **Item 7 Extraction**: 6,802/6,878 (98.9%)
-- **Both Items Present**: 6,715/6,878 (97.6%)
 - **Processing Success Rate**: 100% (no failures)
-- **Output**: 108 MB parquet file with full metadata & content
+- **Multi-step Validation**: Successfully handles ToC detection, line-wrapped items, and reference skipping
+- **Output**: Parquet files organized by year with metadata & Item 1A content
 
 ### Next Potential Enhancements
 - [ ] Add support for other form types (10-Q, 8-K, etc.)

@@ -424,9 +424,8 @@ def process_files_to_parquet(file_or_dir: Path) -> None:
                     quarter = part
                     break
 
-            # Extract items
+            # Extract Item 1A (Risk Factors)
             item_1a = extract_item(text, "1A")
-            item_7 = extract_item(text, "7")
 
             # Create data row with year and quarter at the beginning
             row = {
@@ -438,7 +437,6 @@ def process_files_to_parquet(file_or_dir: Path) -> None:
                 "form_type": metadata.get("form_type"),
                 "conformed_period": metadata.get("conformed_period"),
                 "item_1a": item_1a,
-                "item_7": item_7,
             }
 
             # Add to year bucket

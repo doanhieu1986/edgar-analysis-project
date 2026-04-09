@@ -54,20 +54,20 @@ python run_test.py
 6. `form_type` - CONFORMED SUBMISSION TYPE
 7. `conformed_period` - CONFORMED PERIOD OF REPORT (YYYYMMDD)
 8. `item_1a` - Nội dung Item 1A (Risk Factors) - full text
-9. `item_7` - Nội dung Item 7 (MD&A) - full text
 
 **File output**:
 - Lưu trong thư mục `outputs/`
 - Tên file: `{year}_data.parquet` (ví dụ: `2024_data.parquet`, `2023_data.parquet`)
 - Nếu có nhiều file cùng năm, dữ liệu được gộp vào cùng một parquet file
 
-## 🔧 Multi-Step Validation (NEW)
+## 🔧 Multi-Step Validation for Item 1A Extraction
 
 Extract_item.py sử dụng **three-phase validation** để xử lý các edge cases:
 
 1. **Phase 1 - Normalize Line-Wrapped Items**
    - Chuyển "Item\n1A.\nRisk" → "Item 1A. Risk"
    - Xử lý File 8 format đặc biệt
+   - Hỗ trợ format "1A. Risk" không có "Item" keyword
 
 2. **Phase 2 - Remove Table of Contents**
    - Phát hiện ToC section bằng keyword matching ("Table of Contents", "PART I")
@@ -80,7 +80,7 @@ Extract_item.py sử dụng **three-phase validation** để xử lý các edge 
    - Skip Item references (in Item, See Item, Part I,...)
    - Tìm first valid Item header
 
-**Kết quả**: ✅ 98.3% Item 1A, 98.9% Item 7 extraction rate trên 6,878 files
+**Kết quả**: ✅ 98.3% Item 1A extraction rate trên 6,878 files
 
 ## 📊 Performance Results
 
