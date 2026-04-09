@@ -79,10 +79,49 @@ edgar-analysis-project/
 
 ### Key Functions
 
+#### `detect_toc_section(text: str) -> tuple[int | None, int | None]`
+- **Purpose**: Identifies Table of Contents section boundaries
+- **How it works**: 
+  - Searches for "Table of Contents" or "PART I" keywords (case-insensitive)
+  - Finds ToC end by locating "Item 1." with substantial content
+  - Falls back to "Item 1A" if "Item 1." not found
+- **Returns**: Tuple of (start_position, end_position) or (None, None)
+- **Why needed**: Avoids false matches on ToC entries (which contain page numbers)
+
+#### `normalize_line_wrapped_items(text: str) -> str`
+- **Purpose**: Standardizes line-wrapped Item format (File 8 format)
+- **Converts**: "Item\n1A.\nRisk Factors" → "Item 1A. Risk Factors"
+- **Handles**: Various newline/whitespace patterns
+- **Why needed**: Many SEC files split Items across multiple lines
+
+#### `is_toc_entry_not_header(text: str, match_start: int, item_id: str) -> bool`
+- **Purpose**: Distinguishes ToC entries from actual Item headers
+- **Detection**: Looks for page number pattern (1-3 digits) after Item ID
+- **Pattern**: Matches "Item ID ... page_number ... Item/EOF"
+- **Why needed**: Many ToC sections contain duplicate Item mentions with page numbers
+
+#### `is_reference_not_header(text: str, match_start: int, match_text: str) -> bool`
+- **Purpose**: Skips Item mentions that are references in text
+- **Detects**: "in Item 1A", "Part I, Item 1A", "See Item 1A", etc.
+- **Why needed**: Documents often reference other Items in their text
+
+#### `find_item_position(text: str, item_id: str, skip_toc: bool = True) -> int | None`
+- **Purpose**: Finds first valid Item occurrence with multi-level validation
+- **Validation steps**:
+  1. Skip matches within ToC region
+  2. Skip matches that are ToC entries (have page numbers)
+  3. Skip matches that are references in text
+- **Returns**: Position of valid Item header or None
+- **Why needed**: Coordinates all validation steps to find genuine Item headers
+
 #### `extract_item(text: str, item_id: str) -> str | None`
-- Finds Item by ID, returns content from Item header to next Item (or EOF)
-- Used for both single extraction and batch processing
-- **Don't change**: Core regex pattern without testing against sample files
+- **Purpose**: Extracts Item content with smart multi-step validation
+- **Three-phase process**:
+  1. Normalize line-wrapped Items
+  2. Detect and remove Table of Contents section
+  3. Find valid Item position and extract content
+- **Returns**: Item content from header to next Item (or EOF), or None if not found
+- **Robustness**: Handles files without ToC, line-wrapped formats, and reference mentions
 
 #### `extract_metadata(text: str) -> Dict[str, Any]`
 - Extracts SEC header fields: cik, filed_date, form_type, conformed_period
@@ -159,11 +198,14 @@ python scripts/extract_item.py . --parquet
 python scripts/run_test.py
 ```
 
-### Expected Behavior
-- ✅ Item 1A: ~50K characters (Risk Factors)
-- ✅ Item 7: ~47K characters (MD&A)
-- ✅ Parquet file: ~50 KB (with full text content)
-- ✅ Year extracted: 2024 (from filed_date 20240102)
+### Verified Behavior (2026-04-09 Batch Test)
+- ✅ Item 1A: 98.3% extraction (6,762/6,878 files)
+- ✅ Item 7: 98.9% extraction (6,802/6,878 files)
+- ✅ Both Items: 97.6% (6,715/6,878 files)
+- ✅ Processing Time: ~4.5 minutes for 6,878 files
+- ✅ Output: 108 MB parquet file with full metadata & content
+- ✅ Year extracted: Correctly from filed_date (2024 for all 6,878 files)
+- ✅ No processing failures: 100% success rate
 
 ---
 
@@ -254,7 +296,7 @@ When updating code:
 
 ---
 
-## 🎯 Current Status (as of 2026-04-08)
+## 🎯 Current Status (as of 2026-04-09)
 
 ### Completed Features
 - ✅ Extract specific Items from 10-K files
@@ -265,6 +307,17 @@ When updating code:
 - ✅ Export to Parquet format
 - ✅ Organize output by year (from filed_date)
 - ✅ View Parquet data as DataFrame
+- ✅ Multi-step validation for robust Item extraction
+- ✅ Handle diverse file formats (ToC, line-wrapped Items, references)
+- ✅ Full batch test: 6,878 files processed (100% success rate)
+
+### Validation & Test Results (2026-04-09)
+- **Batch Processing**: 6,878 files processed in ~4.5 minutes
+- **Item 1A Extraction**: 6,762/6,878 (98.3%)
+- **Item 7 Extraction**: 6,802/6,878 (98.9%)
+- **Both Items Present**: 6,715/6,878 (97.6%)
+- **Processing Success Rate**: 100% (no failures)
+- **Output**: 108 MB parquet file with full metadata & content
 
 ### Next Potential Enhancements
 - [ ] Add support for other form types (10-Q, 8-K, etc.)
