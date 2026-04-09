@@ -24,12 +24,23 @@ from tqdm import tqdm
 
 
 def build_item_pattern(item_id: str) -> re.Pattern:
-    """Build regex pattern to match an Item header line."""
+    """
+    Build regex pattern to match an Item header line.
+    Supports multiple formats:
+    - "Item 1A. Risk Factors"
+    - "ITEM 1A. Risk Factors"
+    - "1A. RISK FACTORS"
+    - "1A Risk Factors"
+    - "1A - Risk Factors"
+    """
     # Normalize: "1A" -> "1A", "1a" -> "1A"
     item_id = item_id.strip().upper()
-    # Match: "Item 1A." or "Item 1A " at start of line (case-insensitive)
+    escaped_id = re.escape(item_id)
+
+    # Pattern: Optional "Item" keyword, then item_id with flexible spacing/punctuation
+    # Matches: "Item 1A.", "ITEM 1A ", "1A.", "1A -", etc.
     return re.compile(
-        rf"^Item\s+{re.escape(item_id)}\s*[.\-:]?\s*\S",
+        rf"^(?:Item\s+)?{escaped_id}\s*[.\-:]?\s*\S",
         re.IGNORECASE | re.MULTILINE,
     )
 
@@ -54,18 +65,19 @@ def detect_toc_section(text: str) -> tuple[int | None, int | None]:
     if toc_start is None:
         return None, None
 
-    # Find ToC end marker: "Item 1." actual content (not in ToC)
+    # Find ToC end marker: "Item 1." or "1." actual content (not in ToC)
     # Look for pattern after toc_start with meaningful content after Item 1.
     after_toc = text[toc_start:]
 
-    # Find "Item 1." and check if it's followed by substantial content (not just page number)
-    item1_pattern = re.search(r"Item\s+1[\.\s]+(?![\d\s]*(?:Item|PART))", after_toc, re.IGNORECASE)
+    # Find "Item 1." or "1." and check if it's followed by substantial content (not just page number)
+    # Matches both "Item 1." and "1." formats
+    item1_pattern = re.search(r"(?:Item\s+)?1[\.\s]+(?![\d\s]*(?:Item|PART))", after_toc, re.IGNORECASE)
 
     if item1_pattern:
         toc_end = toc_start + item1_pattern.start()
     else:
-        # Fallback: use first "Item 1A" as ToC end
-        item1a_pattern = re.search(r"Item\s+1A", after_toc, re.IGNORECASE)
+        # Fallback: use first "Item 1A" or "1A" as ToC end
+        item1a_pattern = re.search(r"(?:Item\s+)?1A", after_toc, re.IGNORECASE)
         toc_end = toc_start + item1a_pattern.start() if item1a_pattern else None
 
     return toc_start, toc_end
@@ -109,17 +121,22 @@ def is_toc_entry_not_header(text: str, match_start: int, item_id: str) -> bool:
     - Followed by another Item or newline
 
     Returns: True if it's ToC entry (should skip), False if it's actual header
+
+    Handles both formats:
+    - "Item 1A. Risk Factors 25 Item 1B"
+    - "1A. Risk Factors 25 Item 1B"
     """
     # Check context after match (next 300 chars to find page number)
     after_match = text[match_start:match_start + 300]
 
-    # ToC pattern: Item ID, title, then page number followed by Item/newline
+    # ToC pattern: Optional "Item", ID, title, then page number followed by Item/newline
     # Matches patterns like:
     #   "Item 1A. Risk Factors 25 Item 1B"
+    #   "1A. Risk Factors 25 Item 1B"
     #   "Item 1A. Risk Factors\n25\n"
-    #   "Item 1A.\nRisk\n25\n"
+    #   "1A.\nRisk\n25\n"
     toc_pattern = (
-        r"Item\s+" + re.escape(item_id) + r"\s*\.?\s*"  # Item ID
+        r"(?:Item\s+)?" + re.escape(item_id) + r"\s*\.?\s*"  # Optional "Item" + ID
         r"[^\n]*?"  # Optional title/text (can include newlines from line-wrap)
         r"\s+(\d{1,3})\s*"  # Page number
         r"(?:Item\s+\d+|$|\n)"  # Followed by Item or end
@@ -170,16 +187,22 @@ def find_item_position(text: str, item_id: str, skip_toc: bool = True) -> int | 
         skip_toc: Skip matches within ToC section
 
     Returns: Position of Item header, or None if not found
+
+    Supports multiple formats:
+    - "Item 1A"
+    - "Item 1A."
+    - "1A."
+    - "1A Risk Factors"
     """
     item_id = item_id.strip().upper()
 
     # Determine ToC region to skip
     toc_start, toc_end = (None, None) if not skip_toc else detect_toc_section(text)
 
-    # Regex: flexible Item pattern
-    # Matches: "Item 1A", "Item 1A.", "ITEM 1A", etc.
+    # Regex: flexible Item pattern matching optional "Item" keyword
+    # Matches: "Item 1A", "Item 1A.", "1A.", "ITEM 1A", etc.
     pattern = re.compile(
-        rf"Item\s+{re.escape(item_id)}\s*\.?",
+        rf"(?:Item\s+)?{re.escape(item_id)}\s*\.?",
         re.IGNORECASE | re.MULTILINE
     )
 
@@ -205,17 +228,61 @@ def find_item_position(text: str, item_id: str, skip_toc: bool = True) -> int | 
 
 
 def list_items(text: str) -> list[tuple[str, int, str]]:
-    """Return all Items found: (item_id, line_number, header_text)."""
-    pattern = re.compile(
-        r"^(Item\s+(\d+[A-Z]?)\s*[.\-:]?\s*.+)$",
+    """
+    Return all Items found: (item_id, line_number, header_text).
+    Matches both formats:
+    - "Item 1A. Risk Factors"
+    - "1A. Risk Factors" (but "Item" prefix required for reliable matching)
+
+    Item IDs are 1-2 digits (1-16) with optional single letter (A-Z).
+    """
+    results = []
+
+    # Pattern 1: Standard format with "Item" keyword (most reliable)
+    # Matches: "Item 1A. Risk Factors", "ITEM 1B.", etc.
+    pattern1 = re.compile(
+        r"^Item\s+(\d{1,2}[A-Z]?)\s*[.\-:]?\s*(.+?)$",
         re.IGNORECASE | re.MULTILINE,
     )
-    results = []
-    for m in pattern.finditer(text):
-        item_id = m.group(2).upper()
+    for m in pattern1.finditer(text):
+        item_id = m.group(1).upper()
         line_no = text[: m.start()].count("\n") + 1
-        header = m.group(1).strip()
+        header = f"Item {item_id}. {m.group(2).strip()}"
         results.append((item_id, line_no, header))
+
+    # Pattern 2: Format without "Item" keyword (secondary pattern)
+    # Matches: "1A. RISK FACTORS", "7. Management's Discussion"
+    # Only match if Item ID is 1-16 (valid SEC Item range)
+    # And only at the start of a line after sufficient content/whitespace
+    pattern2 = re.compile(
+        r"^([1-9]|1[0-6])[A-Z]?\s*[\.\-:]\s*([A-Z][^\n]*?)$",
+        re.IGNORECASE | re.MULTILINE,
+    )
+    seen_items = {item_id for item_id, _, _ in results}
+
+    for m in pattern2.finditer(text):
+        item_id = m.group(1).upper()
+        # Skip if already found with "Item" prefix
+        if item_id in seen_items:
+            continue
+        # Skip if looks like it's in the middle of a paragraph
+        # (check if preceded by enough whitespace)
+        start_pos = m.start()
+        if start_pos > 0:
+            # Look back to find start of line
+            line_start = text.rfind('\n', 0, start_pos) + 1
+            before_match = text[line_start:start_pos]
+            # If there's non-whitespace before the match on same line, skip
+            if before_match.strip():
+                continue
+
+        line_no = text[: m.start()].count("\n") + 1
+        header = f"Item {item_id}. {m.group(2).strip()}"
+        results.append((item_id, line_no, header))
+        seen_items.add(item_id)
+
+    # Sort by line number
+    results.sort(key=lambda x: x[1])
     return results
 
 
@@ -281,9 +348,9 @@ def extract_item(text: str, item_id: str) -> str | None:
         return None
 
     # Step 4: Find content boundaries
-    # Find start of Item header
+    # Find start of Item header (matches both "Item 1A" and "1A." formats)
     item_match = re.search(
-        rf"Item\s+{re.escape(item_id)}\s*\.?",
+        rf"(?:Item\s+)?{re.escape(item_id)}\s*[\.\-:]?",
         text_clean[item_pos:],
         re.IGNORECASE
     )
@@ -294,9 +361,9 @@ def extract_item(text: str, item_id: str) -> str | None:
     start_pos = item_pos
 
     # Find end: next Item or EOF
-    # Look for next Item pattern after current position
+    # Look for next Item pattern after current position (matches both formats)
     remaining_text = text_clean[item_pos + len(item_match.group()):]
-    next_item_match = re.search(r"Item\s+\d+[A-Z]?\s*[\.\-:]?", remaining_text, re.IGNORECASE)
+    next_item_match = re.search(r"(?:Item\s+)?\d+[A-Z]?\s*[\.\-:]?", remaining_text, re.IGNORECASE)
 
     if next_item_match:
         end_pos = item_pos + len(item_match.group()) + next_item_match.start()
