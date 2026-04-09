@@ -34,6 +34,176 @@ def build_item_pattern(item_id: str) -> re.Pattern:
     )
 
 
+def detect_toc_section(text: str) -> tuple[int | None, int | None]:
+    """
+    Detect Table of Contents section boundaries.
+
+    Returns: (toc_start_pos, toc_end_pos)
+    - If no ToC found: (None, None)
+    """
+    # Find ToC start marker
+    toc_keywords = ["table of contents", "PART I"]
+    toc_start = None
+
+    for keyword in toc_keywords:
+        match = re.search(rf"\b{keyword}\b", text, re.IGNORECASE)
+        if match:
+            toc_start = match.start()
+            break
+
+    if toc_start is None:
+        return None, None
+
+    # Find ToC end marker: "Item 1." actual content (not in ToC)
+    # Look for pattern after toc_start with meaningful content after Item 1.
+    after_toc = text[toc_start:]
+
+    # Find "Item 1." and check if it's followed by substantial content (not just page number)
+    item1_pattern = re.search(r"Item\s+1[\.\s]+(?![\d\s]*(?:Item|PART))", after_toc, re.IGNORECASE)
+
+    if item1_pattern:
+        toc_end = toc_start + item1_pattern.start()
+    else:
+        # Fallback: use first "Item 1A" as ToC end
+        item1a_pattern = re.search(r"Item\s+1A", after_toc, re.IGNORECASE)
+        toc_end = toc_start + item1a_pattern.start() if item1a_pattern else None
+
+    return toc_start, toc_end
+
+
+def normalize_line_wrapped_items(text: str) -> str:
+    """
+    Normalize line-wrapped Items (File 8 format).
+
+    Example:
+      Item\n1A.\nRisk Factors → Item 1A. Risk Factors
+      Item\n  1A  \nRisk → Item 1A. Risk
+    """
+    # Pattern: "Item" followed by newlines and whitespace, then digit+letter
+    text = re.sub(
+        r"Item\s*\n+\s*(\d+[A-Z]?)\s*\n+",
+        r"Item \1. ",
+        text,
+        flags=re.IGNORECASE
+    )
+
+    # Pattern: digit+letter followed by newlines, then title
+    text = re.sub(
+        r"(\d+[A-Z]?)\.\s*\n+\s+([A-Z])",
+        r"\1. \2",
+        text,
+        flags=re.IGNORECASE
+    )
+
+    return text
+
+
+def is_toc_entry_not_header(text: str, match_start: int, item_id: str) -> bool:
+    """
+    Check if Item match is a ToC entry (with page number) vs actual header.
+
+    ToC entries typically have:
+    - Item header
+    - Optional title
+    - Page number (1-3 digits)
+    - Followed by another Item or newline
+
+    Returns: True if it's ToC entry (should skip), False if it's actual header
+    """
+    # Check context after match (next 300 chars to find page number)
+    after_match = text[match_start:match_start + 300]
+
+    # ToC pattern: Item ID, title, then page number followed by Item/newline
+    # Matches patterns like:
+    #   "Item 1A. Risk Factors 25 Item 1B"
+    #   "Item 1A. Risk Factors\n25\n"
+    #   "Item 1A.\nRisk\n25\n"
+    toc_pattern = (
+        r"Item\s+" + re.escape(item_id) + r"\s*\.?\s*"  # Item ID
+        r"[^\n]*?"  # Optional title/text (can include newlines from line-wrap)
+        r"\s+(\d{1,3})\s*"  # Page number
+        r"(?:Item\s+\d+|$|\n)"  # Followed by Item or end
+    )
+
+    if re.search(toc_pattern, after_match, re.IGNORECASE | re.DOTALL):
+        return True
+
+    return False
+
+
+def is_reference_not_header(text: str, match_start: int, match_text: str) -> bool:
+    """
+    Check if Item match is a reference in text, not an actual header.
+
+    Returns: True if it's a reference (should skip), False if it's a header
+    """
+    # Check context before match
+    before_text = text[max(0, match_start - 50):match_start].lower()
+
+    # Skip if preceded by "in " or "Part I," or similar reference patterns
+    reference_patterns = [
+        r"in\s+Item",  # "in Item 1A. Risk Factors"
+        r"Part\s+[IV]+\s*,\s*Item",  # "Part I, Item 1A"
+        r"See\s+Item",  # "See Item 1A"
+        r"item\s+\d+[a-z]?\s*,",  # "item 1a, described" (lowercase reference)
+    ]
+
+    for pattern in reference_patterns:
+        if re.search(pattern, before_text, re.IGNORECASE):
+            return True
+
+    return False
+
+
+def find_item_position(text: str, item_id: str, skip_toc: bool = True) -> int | None:
+    """
+    Find first valid occurrence of Item with validation.
+
+    Multi-level validation:
+    1. Skip if within ToC region (detected earlier)
+    2. Skip if followed by page number (ToC entry)
+    3. Skip if preceded by "in Item", "Part I," etc (reference)
+
+    Args:
+        text: Document text
+        item_id: Item ID (e.g., "1A", "7")
+        skip_toc: Skip matches within ToC section
+
+    Returns: Position of Item header, or None if not found
+    """
+    item_id = item_id.strip().upper()
+
+    # Determine ToC region to skip
+    toc_start, toc_end = (None, None) if not skip_toc else detect_toc_section(text)
+
+    # Regex: flexible Item pattern
+    # Matches: "Item 1A", "Item 1A.", "ITEM 1A", etc.
+    pattern = re.compile(
+        rf"Item\s+{re.escape(item_id)}\s*\.?",
+        re.IGNORECASE | re.MULTILINE
+    )
+
+    for match in pattern.finditer(text):
+        match_pos = match.start()
+
+        # Skip if within ToC section
+        if toc_end and match_pos < toc_end:
+            continue
+
+        # Skip if it's a ToC entry (has page number after)
+        if is_toc_entry_not_header(text, match_pos, item_id):
+            continue
+
+        # Skip if it's a reference, not a header
+        if is_reference_not_header(text, match_pos, match.group()):
+            continue
+
+        # Found valid Item header
+        return match_pos
+
+    return None
+
+
 def list_items(text: str) -> list[tuple[str, int, str]]:
     """Return all Items found: (item_id, line_number, header_text)."""
     pattern = re.compile(
@@ -83,35 +253,57 @@ def extract_metadata(text: str) -> Dict[str, Any]:
 
 def extract_item(text: str, item_id: str) -> str | None:
     """
-    Extract the text block for a given Item.
-    Returns the content from the Item header up to (but not including)
-    the next Item header, or end of file.
+    Extract the text block for a given Item with smart validation.
+
+    Multi-step process:
+    1. Normalize line-wrapped Items
+    2. Remove Table of Contents
+    3. Find Item with context validation
+    4. Extract content until next Item
     """
     item_id = item_id.strip().upper()
 
-    # Find all item positions
-    item_pattern = re.compile(
-        r"^Item\s+(\d+[A-Z]?)\s*[.\-:]?\s*.+$",
-        re.IGNORECASE | re.MULTILINE,
-    )
-    matches = list(item_pattern.finditer(text))
+    # Step 1: Normalize line-wrapped Items (File 8 format)
+    text_normalized = normalize_line_wrapped_items(text)
 
-    start_match = None
-    end_pos = len(text)
+    # Step 2: Remove Table of Contents section
+    toc_start, toc_end = detect_toc_section(text_normalized)
+    if toc_end:
+        # Keep text before ToC + text after ToC
+        text_clean = text_normalized[:toc_start] + " " + text_normalized[toc_end:]
+    else:
+        text_clean = text_normalized
 
-    for i, m in enumerate(matches):
-        found_id = m.group(1).upper()
-        if found_id == item_id and start_match is None:
-            start_match = m
-            # Next Item becomes the end boundary
-            if i + 1 < len(matches):
-                end_pos = matches[i + 1].start()
-            break
+    # Step 3: Find valid Item position
+    item_pos = find_item_position(text_clean, item_id, skip_toc=False)
 
-    if start_match is None:
+    if item_pos is None:
         return None
 
-    return text[start_match.start() : end_pos].strip()
+    # Step 4: Find content boundaries
+    # Find start of Item header
+    item_match = re.search(
+        rf"Item\s+{re.escape(item_id)}\s*\.?",
+        text_clean[item_pos:],
+        re.IGNORECASE
+    )
+
+    if not item_match:
+        return None
+
+    start_pos = item_pos
+
+    # Find end: next Item or EOF
+    # Look for next Item pattern after current position
+    remaining_text = text_clean[item_pos + len(item_match.group()):]
+    next_item_match = re.search(r"Item\s+\d+[A-Z]?\s*[\.\-:]?", remaining_text, re.IGNORECASE)
+
+    if next_item_match:
+        end_pos = item_pos + len(item_match.group()) + next_item_match.start()
+    else:
+        end_pos = len(text_clean)
+
+    return text_clean[start_pos:end_pos].strip()
 
 
 def process_files_to_parquet(file_or_dir: Path) -> None:
