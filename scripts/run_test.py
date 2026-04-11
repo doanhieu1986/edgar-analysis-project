@@ -1,8 +1,8 @@
 """
-View parquet file as DataFrame using Polars
+View parquet file as DataFrame using Pandas
 """
 
-import polars as pl
+import pandas as pd
 from pathlib import Path
 
 # Get the outputs directory relative to script location
@@ -20,9 +20,9 @@ if not parquet_files:
 file_path = parquet_files[0]
 print(f"Reading: {file_path.name}\n")
 
-# Read file using Polars
-df = pl.read_parquet(file_path)
+# Read file using Pandas
+df = pd.read_parquet(file_path)
 
 # Display data
-print(df)
+print(df.to_string())
 print(f"\nShape: {df.shape[0]} rows × {df.shape[1]} columns")
