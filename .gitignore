@@ -2,4 +2,3 @@
 .*/
 
 # Ignore outputs directory (generated parquet files)
-outputs/
