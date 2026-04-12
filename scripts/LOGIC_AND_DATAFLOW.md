@@ -559,6 +559,91 @@ python scripts/run_test.py
 
 ---
 
+---
+
+## 🧹 Giai đoạn 2: Data Preprocessing (`preprocess.py`)
+
+### Mục đích
+
+Chuẩn bị dữ liệu `item_1a` cho việc huấn luyện model phân loại nội dung liên quan đến **Trade War**.
+
+### Bước 1: Merge — `merge_parquet_files()`
+
+```python
+def merge_parquet_files(outputs_dir: Path) -> pd.DataFrame:
+```
+- Glob tất cả file `{year}_data.parquet` trong `outputs/`
+- `pd.concat()` theo thứ tự năm tăng dần
+- Output: `outputs/combined_data.parquet` — 225,220 rows, 8 cột
+
+### Bước 2: Clean — `clean_dataframe()`
+
+```python
+def clean_dataframe(df: pd.DataFrame, min_len: int = 200) -> pd.DataFrame:
+```
+
+**Sub-steps** (theo thứ tự):
+
+| Sub-step | Hàm | Mô tả | Kết quả |
+|---|---|---|---|
+| 2a. Filter | — | Drop null + `len(item_1a) < 200` | Loại garbage extractions từ file cũ |
+| 2b. Strip header | `strip_item_header()` | Xóa `"Item 1A. Risk Factors"` đầu text | Bắt đầu bằng nội dung thực |
+| 2c. Normalize | `normalize_whitespace()` | `\n`, `\r` → space; collapse multi-space | Text single-line, clean |
+
+**Lý do filter < 200 chars**: Scan thực tế cho thấy 47% texts ngắn là garbage — regex của `extract_item.py` bắt nhầm "1A" trong file cũ (1993–2004) chưa có mục Item 1A.
+
+**Output**: `outputs/cleaned_data.parquet` — thêm cột `item_1a_clean`, 64,330 rows.
+
+### Pipeline tổng thể (Giai đoạn 2)
+
+```
+outputs/{year}_data.parquet (32 files)
+    ↓ merge_parquet_files()
+outputs/combined_data.parquet  (225,220 rows)
+    ↓ clean_dataframe()
+    │  ├─ drop null / < 200 chars  →  −160,890 rows
+    │  ├─ strip_item_header()
+    │  └─ normalize_whitespace()
+outputs/cleaned_data.parquet   (64,330 rows, +cột item_1a_clean)
+```
+
+### Thống kê sau cleaning (2026-04-11)
+
+| Metric | Giá trị |
+|---|---|
+| Input rows | 225,220 |
+| Dropped (null / garbage) | 160,890 |
+| Output rows | 64,330 |
+| item_1a_clean median length | 767 chars |
+| item_1a_clean max length | 27,918 chars |
+| Rows still starting with header | 0 |
+
+### CLI
+
+```bash
+python preprocess.py merge            # Bước 1 only
+python preprocess.py clean            # Bước 2 only (cần combined_data.parquet)
+python preprocess.py all              # Cả 2 bước
+python preprocess.py clean --min-len 500   # Tùy chỉnh ngưỡng filter
+```
+
+### Phân tích nội dung Trade War (2026-04-11)
+
+Scan trên 155,974 docs có item_1a cho thấy:
+
+| Từ khóa | Số docs | % |
+|---|---|---|
+| "trade war" (exact) | 21 | 0.01% |
+| "tariff(s)" | 405 | 0.26% |
+| "trade barrier" | 65 | 0.04% |
+| "trade sanction" | 22 | 0.01% |
+| "retaliatory tariff" | 21 | 0.01% |
+| Tổng union | ~530 | ~0.34% |
+
+**Kết luận**: Class imbalance nghiêm trọng (~1:300). Cần chiến lược labeling phù hợp trước khi training model (keyword-based, LLM scoring, hoặc hybrid).
+
+---
+
 ## 📈 Performance Notes
 
 ### Complexity Analysis
